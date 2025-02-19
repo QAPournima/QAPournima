@@ -88,6 +88,22 @@
 ![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=qapournima&theme=flat&column=4)
 
 ---
+
+### 👩🏻‍💻 Some QA Stuff
+* [Test plan](Add google doc link)
+* [Scenario and test cases](Add google doc link)
+* [Bug report](Add google doc link)
+* [Test report](Add google doc link)
+* [QA Status Report](Add google doc link)
+---
+ ### 👩🏻‍💻 Some of my Skills Other Than QA
+* [Project Report](Add google doc link)
+* [PM-User story Creation](Add google doc link)
+* [Design - Figma Design for mobile app](Add Figma link)
+
+
+  
+---
 ### 📬 **Let's Connect!**
 🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile/)  
 
