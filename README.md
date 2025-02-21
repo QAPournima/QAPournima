@@ -1,4 +1,5 @@
 <h1 align="center">🌟 Glad you're here to explore my GitHub! 🌟</h1>
+
 <p align="center">
   <h3  align="center"> Hi there! 👋 I'm Pournima  </h3>
  
@@ -45,7 +46,6 @@
 - **✅ Database Testing**: Proficient in testing **SQL** and **NoSQL (MongoDB)** databases.
 
 ---
----
 
 ### 🛠️ **Tech Stack & Tools**
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
@@ -53,7 +53,6 @@
 ![Appium](https://img.shields.io/badge/Appium-9C27B0?style=flat&logo=appium&logoColor=white)
 ![TestNG](https://img.shields.io/badge/TestNG-FF6F00?style=flat)
 ![Cucumber](https://img.shields.io/badge/Cucumber-23D300?style=flat&logo=cucumber&logoColor=white)
-![RestAssured](https://img.shields.io/badge/RestAssured-4CAF50?style=flat)
 ![JMeter](https://img.shields.io/badge/JMeter-E2231A?style=flat&logo=apachejmeter&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-004880?style=flat&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
@@ -66,26 +65,26 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 ![BrowserStack](https://img.shields.io/badge/BrowserStack-FF7A00?style=flat&logo=browserstack&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![OPENAI](https://img.shields.io/badge/OPEN%20AI-style%3Dflat%26logo%3Dhtml5%26logoColor%3Dblack)
+
+---
+
+![](https://komarev.com/ghpvc/?username=your-github-username&color=blueviolet)
+
 
 
 ---
-
-### 📌 **Pinned Repositories**
-🌟 [E2E Test Automation Framework](https://github.com/yourusername/e2e-automation)  
-🌟 [API Testing with RestAssured](https://github.com/yourusername/api-testing)  
-🌟 [Mobile Automation with Appium](https://github.com/yourusername/appium-framework)  
-🌟 [CI/CD Pipeline for Test Automation](https://github.com/yourusername/ci-cd-testing)  
-🌟 [Performance Testing Scripts (JMeter)](https://github.com/yourusername/jmeter-scripts)  
-
----
----
-
-### 🚀 **GitHub Stats & Achievements**
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=qapournima&show_icons=true&theme=dark)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qapournima&layout=compact&theme=dark)
-
 
 ![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=qapournima&theme=flat&column=4)
+
+---
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=cycosad&theme=dark&ring=fb4362&file=fb4362&currStreakNum=fb4362&currStreakLabel=fb4362&hide_border=true)](https://git.io/streak-stats)
+
+---
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=8&card_width=320" />
+</a>
 
 ---
 
@@ -106,6 +105,7 @@
 ---
 ### 📬 **Let's Connect!**
 🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile/)  
+
 
 --- 
 
