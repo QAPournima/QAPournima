@@ -1,7 +1,7 @@
 <h1 align="center">🌟 Glad you're here to explore my GitHub! 🌟</h1>
 
 <p align="center">
-  <h3  align="center"> Hi there! 👋 I'm Pournima  </h3>
+  <h3  align="center"> Hi there! 👋 I'm Pournima,  </h3>
  
  <h4 align="center"> 🚀 QA Automation Engineer 🔹 14+ years of experience in <strong> Quality Assurance & Automation </strong> 🔹 Skilled in <strong> Java, Selenium, Appium, API Testing, CI/CD, Performance Testing </strong> 🔹 Passionate about <strong> Agile Methodologies </strong> and <strong> Continuous Testing. </strong>  
  </h4>
@@ -69,21 +69,11 @@
 
 ---
 
-![](https://komarev.com/ghpvc/?username=your-github-username&color=blueviolet)
-
-
-
----
-
 ![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=qapournima&theme=flat&column=4)
 
 ---
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=cycosad&theme=dark&ring=fb4362&file=fb4362&currStreakNum=fb4362&currStreakLabel=fb4362&hide_border=true)](https://git.io/streak-stats)
-
----
 <a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=8&card_width=320" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=QApournima&layout=compact&langs_count=8&card_width=320" />
 </a>
 
 ---
@@ -113,4 +103,5 @@
 <p align="center"> <i> <em> 💫"Quality in software testing isn’t a coincidence—it's the outcome of smart automation, rigorous validation, and relentless improvement."💫 </i></em></p>
 
 ---
----
+![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&color=blueviolet)
+
