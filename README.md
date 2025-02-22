@@ -89,11 +89,12 @@
 ---
 
 ### 👩🏻‍💻 Some QA Stuff
-* [Test plan](Add google doc link)
-* [Scenario and test cases](Add google doc link)
-* [Bug report](Add google doc link)
-* [Test report](Add google doc link)
-* [QA Status Report](Add google doc link)
+* [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
+* [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
+* [Scenario and Test Cases](https://docs.google.com/spreadsheets/d/1DGyj3U07JG-oePgg21ckEBOEsZU-ejdzLSwQzcqEvfE/edit?usp=sharing)
+* [Bug Report](https://docs.google.com/spreadsheets/d/1xdwkB53Qo4fE_aXe07GSr4oLAlL5ZG5QCLvNdnYtPB8/edit?usp=sharing)
+* [Automation Test report](https://docs.google.com/spreadsheets/d/1u3o7o4AuxK7JrZ8kAcI4VbSCxZYtziO8g08nGso_AP8/edit?usp=sharing)
+* [QA Status Report](https://docs.google.com/spreadsheets/d/1lpLyv7z-UlaPSG4q4xuqBrzCD09unfzGE6cUmTkZLQc/edit?usp=sharing)
 ---
  ### 👩🏻‍💻 Some of my Skills Other Than QA
 * [Project Report](Add google doc link)
