@@ -91,6 +91,10 @@
 * [PM-User story Creation](Add google doc link)
 * [Design - Figma Design for mobile app](Add Figma link)
 
+---
+### 📖 My Article
+* [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
+* [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
 
   
 ---
