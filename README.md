@@ -78,18 +78,15 @@
 
 ---
 
-### 👩🏻‍💻 Some QA Stuff
+### 👩🏻‍💻 Some QA & PM Stuff
 * [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
 * [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
 * [Scenario and Test Cases](https://docs.google.com/spreadsheets/d/1DGyj3U07JG-oePgg21ckEBOEsZU-ejdzLSwQzcqEvfE/edit?usp=sharing)
 * [Bug Report](https://docs.google.com/spreadsheets/d/1xdwkB53Qo4fE_aXe07GSr4oLAlL5ZG5QCLvNdnYtPB8/edit?usp=sharing)
 * [Automation Test report](https://docs.google.com/spreadsheets/d/1u3o7o4AuxK7JrZ8kAcI4VbSCxZYtziO8g08nGso_AP8/edit?usp=sharing)
 * [QA Status Report](https://docs.google.com/spreadsheets/d/1lpLyv7z-UlaPSG4q4xuqBrzCD09unfzGE6cUmTkZLQc/edit?usp=sharing)
----
- ### 👩🏻‍💻 Some of my Skills Other Than QA
-* [Project Report](Add google doc link)
-* [PM-User story Creation](Add google doc link)
-* [Design - Figma Design for mobile app](Add Figma link)
+* [PM-User story](https://docs.google.com/spreadsheets/d/1sjgoekw_lbKJ7i8Cr2KUbIOVDszoEBCwy_eJ4sZ-UBc/edit?usp=sharing)
+
 
 ---
 ### 📖 My Article
@@ -99,7 +96,7 @@
   
 ---
 ### 📬 **Let's Connect!**
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile/)  
+🔗 [LinkedIn](www.linkedin.com/in/pournimatele)  
 
 
 --- 
