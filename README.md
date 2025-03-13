@@ -79,22 +79,22 @@
 ---
 
 ### 👩🏻‍💻 Some QA & PM Stuff
-* [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
-* [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
-* [Scenario and Test Cases](https://docs.google.com/spreadsheets/d/1DGyj3U07JG-oePgg21ckEBOEsZU-ejdzLSwQzcqEvfE/edit?usp=sharing)
-* [Bug Report](https://docs.google.com/spreadsheets/d/1xdwkB53Qo4fE_aXe07GSr4oLAlL5ZG5QCLvNdnYtPB8/edit?usp=sharing)
-* [Automation Test report](https://docs.google.com/spreadsheets/d/1u3o7o4AuxK7JrZ8kAcI4VbSCxZYtziO8g08nGso_AP8/edit?usp=sharing)
-* [QA Status Report](https://docs.google.com/spreadsheets/d/1lpLyv7z-UlaPSG4q4xuqBrzCD09unfzGE6cUmTkZLQc/edit?usp=sharing)
-* [PM-User story](https://docs.google.com/spreadsheets/d/1sjgoekw_lbKJ7i8Cr2KUbIOVDszoEBCwy_eJ4sZ-UBc/edit?usp=sharing)
+* 📄 [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
+* 📄 [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
+* 📄 [Scenario and Test Cases](https://docs.google.com/spreadsheets/d/1DGyj3U07JG-oePgg21ckEBOEsZU-ejdzLSwQzcqEvfE/edit?usp=sharing)
+* 📊 [Bug Report](https://docs.google.com/spreadsheets/d/1xdwkB53Qo4fE_aXe07GSr4oLAlL5ZG5QCLvNdnYtPB8/edit?usp=sharing)
+* 📊 [Automation Test report](https://docs.google.com/spreadsheets/d/1u3o7o4AuxK7JrZ8kAcI4VbSCxZYtziO8g08nGso_AP8/edit?usp=sharing)
+* 📊 [QA Status Report](https://docs.google.com/spreadsheets/d/1lpLyv7z-UlaPSG4q4xuqBrzCD09unfzGE6cUmTkZLQc/edit?usp=sharing)
+* 📄 [PM-User story](https://docs.google.com/spreadsheets/d/1sjgoekw_lbKJ7i8Cr2KUbIOVDszoEBCwy_eJ4sZ-UBc/edit?usp=sharing)
 
 
 ---
-### 📖 My Article
-* [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
-* [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-* [Effective Mobile Testing Strategies for QA: Balancing Manual & Automation Approaches](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-* [AI-Driven Testing: Revolutionizing Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
-* [Breaking Silos in Agile Teams: Fostering Collaboration and Alignment](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
+### 📖 My Article 
+* ✍️ [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
+* ✍️ [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
+* ✍️ [Effective Mobile Testing Strategies for QA: Balancing Manual & Automation Approaches](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
+* ✍️ [AI-Driven Testing: Revolutionizing Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
+* ✍️ [Breaking Silos in Agile Teams: Fostering Collaboration and Alignment](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
 
   
 ---
@@ -107,5 +107,6 @@
 <p align="center"> <i> <em> 💫"Quality in software testing isn’t a coincidence—it's the outcome of smart automation, rigorous validation, and relentless improvement."💫 </i></em></p>
 
 ---
-![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&color=blueviolet)
+ ![Profile Views](https://komarev.com/ghpvc/?username=your-github-username&color=blueviolet)
+
 
