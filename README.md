@@ -92,6 +92,9 @@
 ### 📖 My Article
 * [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
 * [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
+* [Effective Mobile Testing Strategies for QA: Balancing Manual & Automation Approaches](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
+* [AI-Driven Testing: Revolutionizing Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
+* [Breaking Silos in Agile Teams: Fostering Collaboration and Alignment](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
 
   
 ---
