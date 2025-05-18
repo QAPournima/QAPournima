@@ -46,7 +46,8 @@
 - **✅ Database Testing**: Proficient in testing **SQL** and **NoSQL (MongoDB)** databases.
 
 ---
-
+### 👀 Have A look at My portfolio 🌐 [Pournima Tele](https://editor.wix.com/html/editor/web/renderer/edit/32d68b58-0c8b-4f71-98ec-9b3b89bef670?metaSiteId=1c0fbe88-99b5-492d-9935-9a04204a2c96)
+---
 ### 🛠️ **Tech Stack & Tools**
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
@@ -77,7 +78,6 @@
 </a>
 
 ---
-
 ### 👩🏻‍💻 Some QA & PM Stuff
 * 📄 [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
 * 📄 [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
@@ -89,12 +89,18 @@
 
 
 ---
-### 📖 My Article 
+### 📖 Some of My Article
 * ✍️ [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
 * ✍️ [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
 * ✍️ [Effective Mobile Testing Strategies for QA: Balancing Manual & Automation Approaches](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-* ✍️ [AI-Driven Testing: Revolutionizing Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
+* ✍️ [AI-Driven Testing: Revolutionising Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
 * ✍️ [Breaking Silos in Agile Teams: Fostering Collaboration and Alignment](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
+* ✍️ [Navigating Testing Dilemmas My Journey in Prioritizing Features Amid Tight Deadlines](https://editor.wix.com/html/editor/web/renderer/edit/32d68b58-0c8b-4f71-98ec-9b3b89bef670?metaSiteId=1c0fbe88-99b5-492d-9935-9a04204a2c96)
+
+---
+### 📖 My Books
+* ✍️ [The Last Line of Defense - By Pournima Tele](https://simplebooklet.com/thelastlineofdefensebyqa#page=1)
+
 
   
 ---
