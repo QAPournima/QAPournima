@@ -71,15 +71,6 @@
 ![OPENAI](https://img.shields.io/badge/OPEN%20AI-style%3Dflat%26logo%3Dhtml5%26logoColor%3Dblack)
 
 ---
-
-![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=qapournima&theme=flat&column=4)
-
----
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=QApournima&layout=compact&langs_count=8&card_width=320" />
-</a>
-
----
 ### 👩🏻‍💻 Some QA & PM Stuff
 * 📄 [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
 * 📄 [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
