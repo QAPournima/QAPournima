@@ -33,18 +33,51 @@
       background: #fff;
       overflow: hidden;
     }
-    @media (max-width: 1100px) {
-      .shell { grid-template-columns: 1fr; }
-      .projects { grid-template-columns: 1fr; }
-      .caps { grid-template-columns: 1fr 1fr; }
-      .snapshot, .domains, .right-top { grid-template-columns: 1fr; }
-    }
+    .mobile-hero { display: none; }
     .banner {
       width: 100%;
       height: auto;
       object-fit: contain;
       object-position: center top;
       display: block;
+    }
+    @media (max-width: 1100px) {
+      .shell { grid-template-columns: 1fr; }
+      .projects { grid-template-columns: 1fr 1fr; }
+      .caps { grid-template-columns: 1fr 1fr; }
+      .snapshot, .domains, .right-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .banner { display: none; }
+      .mobile-hero {
+        display: block;
+        background: linear-gradient(120deg, #071433 0%, #1e1b7a 45%, #6d28d9 100%);
+        color: #fff;
+        padding: 28px 18px 22px;
+      }
+      .mobile-hero .eyebrow {
+        margin: 0 0 6px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        opacity: 0.85;
+      }
+      .mobile-hero h1 {
+        margin: 0 0 8px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 34px;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      .mobile-hero p { margin: 0 0 8px; font-size: 14px; line-height: 1.45; color: #e5e7eb; }
+      .mobile-hero .cycle { margin: 12px 0 0; font-weight: 700; color: #fff; }
+      .shell { grid-template-columns: 1fr; gap: 12px; padding: 12px; }
+      .projects, .caps, .snapshot, .domains, .right-top { grid-template-columns: 1fr; }
+      .project img { height: 140px; }
+      .project p { min-height: 0; }
+      .contact .chip { width: 100%; justify-content: center; }
+      h2 { font-size: 18px; }
+      p, .about-list { font-size: 14px; }
     }
     .shell {
       display: grid;
@@ -287,6 +320,12 @@
 <body>
   <div class="page" id="dashboard">
     <img class="banner" src="./profile-assets/banner.png" alt="Pournima Tele banner" />
+    <div class="mobile-hero">
+      <p class="eyebrow">Senior Software Engineer</p>
+      <h1>Pournima Tele</h1>
+      <p>AI-Driven Development · QA Automation · Prompt Engineering · AI/LLM Testing</p>
+      <p class="cycle">Prompt · Build · Test · Improve · Repeat</p>
+    </div>
     <div class="shell">
       <aside class="stack" id="col-left">
         <section class="card">

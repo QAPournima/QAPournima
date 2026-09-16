@@ -69,28 +69,16 @@ def card(repo: dict) -> str:
     if len(desc) > 90:
         desc = desc[:87] + "..."
     lang = (repo.get("language") or "").strip()
-    lang_bit = f"<br/><code>{lang}</code>" if lang else ""
-    return (
-        f'<td width="50%" valign="top">\n'
-        f'<a href="{url}"><strong>{name}</strong></a><br/>\n'
-        f"{desc}{lang_bit}\n"
-        f"</td>"
-    )
+    lang_bit = f" · `{lang}`" if lang else ""
+    return f"- [{name}]({url}) — {desc}{lang_bit}"
 
 
 def render(repos: list[dict]) -> str:
     if not repos:
         return f"{START}\n{END}"
-    rows = ["### More GitHub Projects", "", "<table>"]
-    for i in range(0, len(repos), 2):
-        chunk = repos[i : i + 2]
-        rows.append("<tr>")
-        rows.extend(card(repo) for repo in chunk)
-        if len(chunk) == 1:
-            rows.append("<td></td>")
-        rows.append("</tr>")
-    rows.append("</table>")
-    return f"{START}\n" + "\n".join(rows) + f"\n{END}"
+    lines = ["### More GitHub Projects", ""]
+    lines.extend(card(repo) for repo in repos)
+    return f"{START}\n" + "\n".join(lines) + f"\n{END}"
 
 
 def main() -> None:
