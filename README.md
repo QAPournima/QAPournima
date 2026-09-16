@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./profile-assets/banner.png" alt="Pournima Tele — Senior Software Engineer" width="100%"/>
+  <img src="./profile-assets/banner.png?v=2" alt="Pournima Tele — Senior Software Engineer" width="100%"/>
 </div>
 
 <div align="center">
