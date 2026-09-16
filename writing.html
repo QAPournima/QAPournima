@@ -22,7 +22,7 @@
       font-family: Inter, ui-sans-serif, system-ui, sans-serif;
       color: var(--text);
     }
-    .page { width: 100%; max-width: 1080px; margin: 0 auto; background: #fff; }
+    .page { width: 100%; max-width: 1120px; margin: 0 auto; background: #fff; }
     .banner {
       display: block;
       width: 100%;
@@ -40,33 +40,88 @@
       text-decoration: none;
     }
     h1 { margin: 0 0 6px; font-size: 28px; color: var(--title); }
-    .intro { margin: 0 0 18px; font-size: 14px; line-height: 1.55; color: var(--muted); }
-    .list { display: grid; gap: 12px; }
+    h2 { margin: 22px 0 12px; font-size: 16px; color: #1e3a8a; }
+    .intro { margin: 0 0 8px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
     .card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       background: var(--card);
       border: 1px solid #edf2f7;
       border-radius: 16px;
-      padding: 16px 18px;
+      overflow: hidden;
       text-decoration: none;
       color: inherit;
+      min-height: 100%;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
     }
-    .card:hover { border-color: #c7d2fe; }
-    .kind {
-      margin: 0 0 6px;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #15803d;
+    .card:hover { border-color: #c7d2fe; transform: translateY(-2px); }
+    .thumb {
+      height: 168px;
+      background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+      overflow: hidden;
     }
-    .card h2 { margin: 0 0 6px; font-size: 17px; color: var(--title); line-height: 1.35; }
-    .card p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .thumb .fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 800;
+    }
+    .thumb .fallback[hidden] { display: none; }
+    .body { padding: 14px 15px 16px; }
+    .meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .src {
+      background: #eef2ff;
+      color: #3730a3;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+    .src.medium { background: #ecfdf3; color: #166534; }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      color: var(--title);
+      line-height: 1.35;
+    }
+    .card p {
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .medium-list { display: grid; gap: 12px; }
+    .medium-list .card { padding: 16px 18px; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
     @media (max-width: 720px) {
       .banner { height: 140px; }
       .wrap { padding: 16px 14px 28px; }
       h1 { font-size: 22px; }
+      .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -76,30 +131,74 @@
     <div class="wrap">
       <a class="back" href="./index.html">← Back to dashboard</a>
       <h1>Writing</h1>
-      <p class="intro">Articles on Medium. Blogs live on a separate page.</p>
-      <div class="list">
+      <p class="intro">Articles from my Wix site, plus selected Medium posts. Click a card to read the full piece.</p>
+
+      <h2>Wix</h2>
+      <div class="grid" id="wix"></div>
+
+      <h2>Medium</h2>
+      <div class="medium-list">
         <a class="card" href="https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1" target="_blank" rel="noopener noreferrer">
-          <p class="kind">Medium</p>
-          <h2>The Role of QA in an Agile Scrum Team</h2>
+          <div class="meta"><span class="src medium">Medium</span></div>
+          <h3>The Role of QA in an Agile Scrum Team</h3>
           <p>How QA navigates the product life cycle inside Scrum.</p>
         </a>
         <a class="card" href="https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1" target="_blank" rel="noopener noreferrer">
-          <p class="kind">Medium</p>
-          <h2>Understanding Shift-Left Testing</h2>
+          <div class="meta"><span class="src medium">Medium</span></div>
+          <h3>Understanding Shift-Left Testing</h3>
           <p>A practical guide to finding issues earlier.</p>
         </a>
         <a class="card" href="https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560" target="_blank" rel="noopener noreferrer">
-          <p class="kind">Medium</p>
-          <h2>AI-Driven Testing</h2>
+          <div class="meta"><span class="src medium">Medium</span></div>
+          <h3>AI-Driven Testing</h3>
           <p>Using automation and AI to test faster without losing quality.</p>
         </a>
         <a class="card" href="https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c" target="_blank" rel="noopener noreferrer">
-          <p class="kind">Medium</p>
-          <h2>Breaking Silos in Agile Teams</h2>
+          <div class="meta"><span class="src medium">Medium</span></div>
+          <h3>Breaking Silos in Agile Teams</h3>
           <p>Collaboration and alignment across engineering and QA.</p>
         </a>
       </div>
     </div>
   </div>
+  <script>
+    function esc(s) {
+      return String(s || "").replace(/[&<>"']/g, function (c) {
+        return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+      });
+    }
+    fetch("./writing/catalog.json")
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        const list = document.getElementById("wix");
+        (data.posts || []).filter(function (post) { return post.source !== "medium"; }).forEach(function (post) {
+          const a = document.createElement("a");
+          a.className = "card";
+          a.href = post.url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          const initial = (post.title || "W").replace(/^[^\w]+/, "").charAt(0).toUpperCase() || "W";
+          const thumb = post.image
+            ? '<img src="' + esc(post.image) + '" alt="" /><div class="fallback" hidden>' + esc(initial) + "</div>"
+            : '<div class="fallback">' + esc(initial) + "</div>";
+          a.innerHTML =
+            '<div class="thumb">' + thumb + "</div>" +
+            '<div class="body">' +
+            '<div class="meta"><span class="src">Wix</span><span>' + esc(post.displayDate) + "</span></div>" +
+            "<h3>" + esc(post.title) + "</h3>" +
+            "<p>" + esc(post.excerpt) + "</p>" +
+            "</div>";
+          list.appendChild(a);
+          const img = a.querySelector("img");
+          if (img) {
+            img.addEventListener("error", function () {
+              img.style.display = "none";
+              const fb = a.querySelector(".fallback");
+              if (fb) fb.hidden = false;
+            });
+          }
+        });
+      });
+  </script>
 </body>
 </html>
