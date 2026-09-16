@@ -10,7 +10,7 @@ AI-Driven Development · QA Automation · Prompt Engineering
 
 14+ years in Quality Engineering, Test Automation and Software Engineering.
 
-<a href="https://www.linkedin.com/in/pournimatele"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/pournimatele/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=flat-square&logo=github&logoColor=white" alt="Portfolio"/></a>
 <a href="https://qapournima.github.io/QAPournima/work-history.html"><img src="https://img.shields.io/badge/Work_History-0F766E?style=flat-square" alt="Work History"/></a>
@@ -24,7 +24,7 @@ AI-Driven Development · QA Automation · Prompt Engineering
 
 Hands-on Senior Software Engineer with a Quality Engineering background. At Aircall I led QA teams as QA Team Lead, then moved back into a hands-on IC role as Senior Software Engineer — QA Automation (Messaging) and Senior Software Engineer, AI-driven development.
 
-**Current role:** Senior Software Engineer — QA Automation (Messaging team) at [Aircall](https://www.linkedin.com/company/aircall) (Nov 2020 – Present, Paris / London). Previously QA Team Lead. Full work history: [qapournima.github.io/QAPournima/work-history.html](https://qapournima.github.io/QAPournima/work-history.html).
+**Current role:** [Aircall](https://www.linkedin.com/company/aircall) (Permanent · 5 yrs 11 mos) — Engineering Team Lead, QA Automation (Oct 2021 – Present) and Senior Software Quality Assurance Engineer (Nov 2020 – Present, Messaging team). Full work history: [qapournima.github.io/QAPournima/work-history.html](https://qapournima.github.io/QAPournima/work-history.html).
 
 I use AI coding agents such as Claude, Cursor and **OpenCode (LLMGateway)** as collaborators — then apply QA thinking to challenge, test and refine what they produce.
 
@@ -173,7 +173,7 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 
 **Let's Connect**
 
-[LinkedIn](https://www.linkedin.com/in/pournimatele) ·
+[LinkedIn](https://www.linkedin.com/in/pournimatele/) ·
 [GitHub](https://github.com/QAPournima) ·
 [Portfolio](https://github.com/QAPournima/Portfolio) ·
 [Website](https://pournimacsm.wixsite.com/qapournima)

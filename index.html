@@ -157,10 +157,48 @@
       color: #334155;
     }
     .role-card .co {
-      margin: 0 0 4px;
-      font-size: 13px;
+      margin: 0;
+      font-size: 14px;
       font-weight: 700;
-      color: #6d28d9;
+      color: var(--title);
+    }
+    .role-card .tenure {
+      margin: 2px 0 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .li-roles {
+      border-left: 2px solid #e2e8f0;
+      margin: 12px 0 10px 21px;
+      padding-left: 16px;
+    }
+    .li-role { position: relative; padding: 0 0 12px; }
+    .li-role:last-child { padding-bottom: 0; }
+    .li-role::before {
+      content: "";
+      position: absolute;
+      left: -21px;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #94a3b8;
+      box-shadow: 0 0 0 3px #fff;
+    }
+    .li-role h3 {
+      margin: 0 0 2px;
+      font-size: 13px;
+      color: var(--title);
+    }
+    .li-role .when {
+      margin: 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .li-role .where {
+      margin: 2px 0 0;
+      font-size: 11px;
+      color: #64748b;
     }
     .role-card .meta {
       margin: 0 0 8px;
@@ -440,7 +478,7 @@
 
       <main class="stack" id="col-center">
         <div class="contact">
-          <a class="chip chip-linkedin" href="https://www.linkedin.com/in/pournimatele">LinkedIn</a>
+          <a class="chip chip-linkedin" href="https://www.linkedin.com/in/pournimatele/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a class="chip chip-github" href="https://github.com/QAPournima">GitHub</a>
           <a class="chip chip-portfolio" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
           <a class="chip chip-work" href="./work-history.html">Work History</a>
@@ -451,17 +489,25 @@
         </div>
         <section class="card role-card">
           <h2 class="h-navy">💼 Current Role</h2>
-          <span class="now">Current</span>
           <div class="role-id">
             <img class="logo" src="./profile-assets/logos/aircall.png" alt="Aircall logo" />
             <div>
-              <h3>Senior Software Engineer — QA Automation</h3>
-              <p class="role-sub">Messaging team · AI-driven development</p>
-              <p class="co">Aircall · Paris / London</p>
+              <p class="co">Aircall</p>
+              <p class="tenure">Permanent · 5 yrs 11 mos</p>
             </div>
           </div>
-          <p class="meta">Nov 2020 – Present · Cloud calling</p>
-          <p>Previously QA Team Lead at Aircall. Now a hands-on Senior Software Engineer — QA Automation in the Messaging team, with Senior Software Engineer work in AI-driven development, LLM testing and modern engineering practices.</p>
+          <div class="li-roles">
+            <div class="li-role">
+              <h3>Engineering Team Lead - QA Automation</h3>
+              <p class="when">Oct 2021 – Present · 5 yrs</p>
+              <p class="where">Remote</p>
+            </div>
+            <div class="li-role">
+              <h3>Senior Software Quality Assurance Engineer</h3>
+              <p class="when">Nov 2020 – Present · 5 yrs 11 mos</p>
+              <p class="where">Paris, Île-de-France, France · Messaging team · AI-driven development</p>
+            </div>
+          </div>
           <a class="view" href="./work-history.html">View full work history →</a>
         </section>
         <section>
@@ -620,7 +666,7 @@
           <h2 class="h-purple">🤝 Let's Connect</h2>
           <p>Open to collaboration, new opportunities and exciting projects.</p>
           <div class="connect-row">
-            <a class="btn" style="background:#0a66c2" href="https://www.linkedin.com/in/pournimatele">LinkedIn</a>
+            <a class="btn" style="background:#0a66c2" href="https://www.linkedin.com/in/pournimatele/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="btn" style="background:#111827" href="https://github.com/QAPournima">GitHub</a>
             <a class="btn" style="background:#6d28d9" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
             <a class="btn" style="background:#0f766e" href="./work-history.html">Work History</a>
