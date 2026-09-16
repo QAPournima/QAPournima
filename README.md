@@ -55,7 +55,7 @@ AI-driven QA ecosystem across web, mobile and API testing.
 <img src="./profile-assets/genqa-ai-agent-card.png" alt="GenQA AI Agent" width="100%"/>  
 AI assistant that helps create, validate and update test cases.  
 `Python` `Playwright` `LLMs` `Jira`  
-*Internal / Private Project — Happy to discuss this project if you're interested to know more about it.*
+[View project](https://github.com/QAPournima/GenQA-AI-Agent-Web)
 
 **Playwright / AI Automation**  
 <img src="./profile-assets/playwright-ai-automation-card.png" alt="Playwright AI Automation" width="100%"/>  
@@ -73,13 +73,13 @@ iOS and Android E2E with Appium, Maestro and CI/CD.
 <img src="./profile-assets/api-backend-automation-card.png" alt="API and Backend Automation" width="100%"/>  
 REST APIs, integration testing, SQL and MongoDB.  
 `Java` `REST-assured` `Postman` `SQL` `MongoDB`  
-*Internal / Private Project — Happy to discuss this project if you're interested to know more about it.*
+[View project](https://github.com/QAPournima/QAAutomation)
 
 **LLM / Conversational AI Testing**  
 <img src="./profile-assets/llm-conversational-ai-testing-card.png" alt="LLM Conversational AI Testing" width="100%"/>  
 Guardrails, prompt injection, hallucination detection and multi-turn dialogue.  
 `Python` `LLMs` `NLP` `Jira` `TestNG`  
-*Internal / Private Project — Happy to discuss this project if you're interested to know more about it.*
+[View project](https://github.com/QAPournima/AI-Testing-Agents)
 
 <!-- FEATURED-AUTO:START -->
 ### More GitHub Projects
