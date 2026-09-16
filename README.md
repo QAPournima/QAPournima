@@ -154,10 +154,12 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 
 ### Writing & Knowledge Sharing
 
-- [The Role of QA in an Agile Scrum Team](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
-- [Understanding Shift-Left Testing](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-- [AI-Driven Testing](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
-- [Breaking Silos in Agile Teams](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
+All Wix posts: [qapournima.github.io/QAPournima/writing.html](https://qapournima.github.io/QAPournima/writing.html)
+
+- [Predicting High-Risk Bugs with Machine Learning](https://pournimacsm.wixsite.com/qapournima/post/predicting-high-risk-bugs-with-machine-learning-a-practical-guide-for-qa-teams)
+- [AI-Driven Development (ADD)](https://pournimacsm.wixsite.com/qapournima/post/ai-driven-development-add-how-it-s-revolutionizing-the-way-we-build-technology)
+- [QA in the Fast Lane](https://pournimacsm.wixsite.com/qapournima/post/qa-in-the-fast-lane-how-quality-assurance-is-evolving-with-speedy-software-delivery)
+- [Behind the Bots](https://pournimacsm.wixsite.com/qapournima/post/behind-the-bots-real-world-qa-tips-for-chatbots-agents-voice-llm-based-apps)
 
 **Book:** [The Last Line of Defense — By QA](https://qapournima.github.io/QAPournima/books/read.html?id=the-last-line-of-defense) · [Books by me](https://qapournima.github.io/QAPournima/books.html)
 

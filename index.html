@@ -146,6 +146,7 @@
     .chip-email { background: #ea4335; border-color: #ea4335; color: #fff; }
     .chip-work { background: #0f766e; border-color: #0f766e; color: #fff; }
     .chip-books { background: #4c1d95; border-color: #4c1d95; color: #fff; }
+    .chip-write { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
     .cover-img {
       width: 54px;
       height: 74px;
@@ -494,6 +495,7 @@
           <a class="chip chip-portfolio" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
           <a class="chip chip-work" href="./work-history.html">Work History</a>
           <a class="chip chip-books" href="./books.html">Books by me</a>
+          <a class="chip chip-write" href="./writing.html">Blogs</a>
           <a class="chip chip-email" href="mailto:pournima.csm@gmail.com" title="Contact me">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
             pournima.csm@gmail.com
@@ -651,10 +653,13 @@
         </section>
         <section class="card write">
           <h2 class="h-blue">✍️ Writing & Knowledge Sharing</h2>
-          <a href="https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1">The Role of QA in an Agile Scrum Team</a>
-          <a href="https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1">Understanding Shift-Left Testing</a>
-          <a href="https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560">AI-Driven Testing</a>
-          <a href="https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c">Breaking Silos in Agile Teams</a>
+          <div id="writing-links">
+            <a href="https://pournimacsm.wixsite.com/qapournima/post/predicting-high-risk-bugs-with-machine-learning-a-practical-guide-for-qa-teams">Predicting High-Risk Bugs with Machine Learning</a>
+            <a href="https://pournimacsm.wixsite.com/qapournima/post/ai-driven-development-add-how-it-s-revolutionizing-the-way-we-build-technology">AI-Driven Development (ADD)</a>
+            <a href="https://pournimacsm.wixsite.com/qapournima/post/qa-in-the-fast-lane-how-quality-assurance-is-evolving-with-speedy-software-delivery">QA in the Fast Lane</a>
+            <a href="https://pournimacsm.wixsite.com/qapournima/post/behind-the-bots-real-world-qa-tips-for-chatbots-agents-voice-llm-based-apps">Behind the Bots</a>
+          </div>
+          <a class="view" href="./writing.html">See all blogs →</a>
         </section>
         <section class="card">
           <h2 class="h-purple">📚 My Book</h2>
@@ -689,5 +694,14 @@
     </div>
     <div class="footer">Build · Test · Improve · Repeat</div>
   </div>
+  <script>
+    fetch("./writing/catalog.json").then(function (res) { return res.json(); }).then(function (data) {
+      var box = document.getElementById("writing-links");
+      if (!box || !data.posts) return;
+      box.innerHTML = data.posts.slice(0, 5).map(function (post) {
+        return '<a href="' + post.url + '" target="_blank" rel="noopener noreferrer">' + post.title + "</a>";
+      }).join("");
+    }).catch(function () {});
+  </script>
 </body>
 </html>
