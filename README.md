@@ -13,6 +13,7 @@ AI-Driven Development · QA Automation · Prompt Engineering
 <a href="https://www.linkedin.com/in/pournimatele"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=flat-square&logo=github&logoColor=white" alt="Portfolio"/></a>
+<a href="https://qapournima.github.io/QAPournima/work-history.html"><img src="https://img.shields.io/badge/Work_History-0F766E?style=flat-square" alt="Work History"/></a>
 <a href="mailto:pournima.csm@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 
 </div>
@@ -22,6 +23,8 @@ AI-Driven Development · QA Automation · Prompt Engineering
 ### About Me
 
 Hands-on Senior Software Engineer with a Quality Engineering background. After QA leadership, I moved back into an IC role to go deeper into AI-driven development, prompt engineering, AI/LLM testing and modern engineering.
+
+**Current role:** QA Team Lead at [Aircall](https://www.linkedin.com/company/aircall) (Nov 2020 – Present, Paris / London). Full work history: [qapournima.github.io/QAPournima/work-history.html](https://qapournima.github.io/QAPournima/work-history.html).
 
 I use AI coding agents such as Claude, Cursor and **OpenCode (LLMGateway)** as collaborators — then apply QA thinking to challenge, test and refine what they produce.
 

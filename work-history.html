@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work History | Pournima Tele</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --card: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+      --title: #0f172a;
+      --purple: #6d28d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      color: var(--text);
+    }
+    html, body { width: 100%; overflow-x: hidden; }
+    .page {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    .banner {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .wrap { padding: 24px 22px 40px; background: var(--bg); }
+    .back {
+      display: inline-flex;
+      margin-bottom: 14px;
+      color: #2563eb;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      color: var(--title);
+    }
+    .intro {
+      margin: 0 0 20px;
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .job {
+      background: var(--card);
+      border: 1px solid #edf2f7;
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+    .job h2 {
+      margin: 0 0 4px;
+      font-size: 16px;
+      color: var(--title);
+    }
+    .job .co {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--purple);
+    }
+    .dates {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .now {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 10px;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 3px 8px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-left: 6px;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    li { margin: 6px 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: 720px) {
+      .banner { height: 140px; }
+      .wrap { padding: 16px 14px 28px; }
+      h1 { font-size: 22px; }
+      .dates { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img class="banner" src="./profile-assets/banner.png?v=5" alt="Pournima Tele banner" />
+    <div class="wrap">
+      <a class="back" href="./index.html">← Back to dashboard</a>
+      <h1>Work History</h1>
+      <p class="intro">14+ years across telecom, cloud calling, ride-hailing, e-commerce, payroll, CRM and travel. Current focus: AI / LLM testing, conversational voice and messaging QA, and hands-on automation.</p>
+
+      <article class="job">
+        <div class="job-top">
+          <div>
+            <h2>QA Team Lead <span class="now">Current</span></h2>
+            <p class="co">Aircall · Paris, FR / London, UK</p>
+          </div>
+          <div class="dates">Nov 2020 – Present</div>
+        </div>
+        <ul>
+          <li>Lead QA for the Mobile team: test strategy, methodology, resourcing, hiring and performance reviews across a distributed QA organization.</li>
+          <li>Drive mobile test automation with Selenium, Java and Appium, including merge-request reviews, framework improvements and failure analysis.</li>
+          <li>From March 2025, expanded into AI feature QA for Voice Agent and Messaging Agent — conversational AI, intent recognition, multi-turn dialogue and voice/NLP quality.</li>
+          <li>Built an in-house AI automation testing tool covering backend and frontend, with Docker environments and SQL validation for AI-powered regression and API testing.</li>
+          <li>Defined LLM test scenarios for response accuracy, adversarial inputs, guardrails and prompt-injection, working with AI/ML engineers on quality gates.</li>
+          <li>Coordinate delivery with Zephyr, Jira, Confluence, GitLab CI/CD and Calliope reporting.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-top">
+          <div>
+            <h2>Sr. QA Analyst / QA Lead</h2>
+            <p class="co">Kapten (now FreeNow) · Paris, FR</p>
+          </div>
+          <div class="dates">Jun 2019 – Nov 2020</div>
+        </div>
+        <ul>
+          <li>Owned end-to-end QA for the B2C Passenger App team across backend microservices, MongoDB, and frontend web, Android and iOS.</li>
+          <li>Performed API testing with Postman and maintained test cases, plans, reports and requirement traceability.</li>
+          <li>Worked in Scrum using TestRail, Jira and Confluence; supported B2B, Payments and Security tribes.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-top">
+          <div>
+            <h2>QA Lead</h2>
+            <p class="co">IVL Global · Pune, IN / UK · Client: TalkTalk Technology, UK</p>
+          </div>
+          <div class="dates">Sep 2017 – May 2019</div>
+        </div>
+        <ul>
+          <li>Led functional and regression testing for a global telecom provider across OSS domain applications.</li>
+          <li>Worked with development teams on requirements clarification; used HP Quality Center, MTM, Supportal, web services and SQL.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-top">
+          <div>
+            <h2>Sr. Software Test Engineer</h2>
+            <p class="co">Tech Mahindra · Pune, IN / Manchester, UK · Client: British Telecom, UK</p>
+          </div>
+          <div class="dates">Mar 2014 – Sep 2017</div>
+        </div>
+        <ul>
+          <li>Delivered functional and regression testing on client telecom applications.</li>
+          <li>Developed and executed test cases using HP Quality Center, CSS, NEO (Amdocs Clarify) and Siebel.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-top">
+          <div>
+            <h2>Test Engineer</h2>
+            <p class="co">Wipro · Pune, IN</p>
+          </div>
+          <div class="dates">Jul 2010 – Jul 2011</div>
+        </div>
+        <ul>
+          <li>Delivered functional and regression testing on client applications and contributed to QA process improvements in Agile teams.</li>
+        </ul>
+      </article>
+
+      <div class="links">
+        <a class="chip" style="background:#0a66c2" href="https://www.linkedin.com/in/pournimatele">LinkedIn experience</a>
+        <a class="chip" style="background:#2563eb" href="./index.html">Back to dashboard</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

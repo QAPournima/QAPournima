@@ -136,6 +136,35 @@
     .chip-github { background: #24292f; border-color: #24292f; color: #fff; }
     .chip-portfolio { background: #6d28d9; border-color: #6d28d9; color: #fff; }
     .chip-email { background: #ea4335; border-color: #ea4335; color: #fff; }
+    .chip-work { background: #0f766e; border-color: #0f766e; color: #fff; }
+    .role-card h3 {
+      margin: 0 0 2px;
+      font-size: 15px;
+      color: var(--title);
+    }
+    .role-card .co {
+      margin: 0 0 4px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #6d28d9;
+    }
+    .role-card .meta {
+      margin: 0 0 8px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .now {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 10px;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 3px 8px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
     .projects {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -375,8 +404,18 @@
           <a class="chip chip-linkedin" href="https://www.linkedin.com/in/pournimatele">LinkedIn</a>
           <a class="chip chip-github" href="https://github.com/QAPournima">GitHub</a>
           <a class="chip chip-portfolio" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
+          <a class="chip chip-work" href="../work-history.html">Work History</a>
           <a class="chip chip-email" href="mailto:pournima.csm@gmail.com">pournima.csm@gmail.com</a>
         </div>
+        <section class="card role-card">
+          <h2 class="h-navy">💼 Current Role</h2>
+          <span class="now">Current</span>
+          <h3>QA Team Lead</h3>
+          <p class="co">Aircall · Paris / London</p>
+          <p class="meta">Nov 2020 – Present · Cloud calling</p>
+          <p>Lead QA for the Mobile team — test strategy, automation, hiring and delivery. From March 2025, expanded into AI feature QA for Voice Agent and Messaging Agent, including LLM, conversational and guardrail testing.</p>
+          <a class="view" href="../work-history.html">View full work history →</a>
+        </section>
         <section>
           <h2 class="h-purple">✨ Featured AI/Other Projects</h2>
           <div class="projects">
@@ -533,6 +572,7 @@
             <a class="btn" style="background:#0a66c2" href="https://www.linkedin.com/in/pournimatele">LinkedIn</a>
             <a class="btn" style="background:#111827" href="https://github.com/QAPournima">GitHub</a>
             <a class="btn" style="background:#6d28d9" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
+            <a class="btn" style="background:#0f766e" href="../work-history.html">Work History</a>
           </div>
         </section>
       </aside>
