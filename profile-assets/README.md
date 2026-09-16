@@ -3,6 +3,7 @@
 Visual assets used by the QAPournima GitHub profile README.
 
 - `banner.png` — profile hero banner
+- `pado.svg` — PAdo personal project card
 - `ai-testing-platform.png` — AI testing project card
 - `genqa-ai-agent.png` — GenQA project card
 - `playwright-ai-automation.png` — Playwright / AI automation card

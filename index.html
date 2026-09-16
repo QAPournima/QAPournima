@@ -286,6 +286,19 @@
     .project img { width: 100%; height: 92px; object-fit: cover; display: block; }
     .project-body { padding: 10px 12px 12px; }
     .project h3 { margin: 0 0 6px; font-size: 13px; color: #0f172a; }
+    .project .badge {
+      display: inline-block;
+      margin-left: 6px;
+      vertical-align: middle;
+      background: #f5f3ff;
+      color: #6d28d9;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 2px 7px;
+    }
     .project p { margin: 0 0 8px; font-size: 11.5px; color: #64748b; min-height: 46px; }
     .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
     .tag {
@@ -567,6 +580,16 @@
         <section>
           <h2 class="h-purple">✨ Featured AI/Other Projects</h2>
           <div class="projects">
+            <article class="project">
+              <img src="./profile-assets/pado.svg" alt="PAdo AI-powered quality and productivity assistant" />
+              <div class="project-body">
+                <h3>PAdo — AI-Powered Quality &amp; Productivity Assistant <span class="badge">Personal</span></h3>
+                <p>AI-driven desktop assistant for LLM workflows, local automation and intelligent task management. Unifies Slack, Jira, Gmail/Calendar and Confluence with AI briefings, persistent memory, privacy-first storage and event-driven reminders.</p>
+                <div class="tags"><span class="tag">Electron</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">LLMs</span></div>
+                <span class="view">Personal Project</span>
+                <span class="discuss">Happy to discuss if you'd like to know more.</span>
+              </div>
+            </article>
             <article class="project">
               <img src="./profile-assets/ai-testing-platform.png" alt="AI Testing Automation Platform" />
               <div class="project-body">

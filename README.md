@@ -39,6 +39,12 @@ Milton Keynes, UK · Skilled Worker Visa · Open to relocate (UK / France)
 
 ### Featured AI/Other Projects
 
+**PAdo — AI-Powered Quality & Productivity Assistant**  
+<img src="./profile-assets/pado.svg" alt="PAdo AI-powered quality and productivity assistant" width="100%"/>  
+Personal project. AI-driven desktop assistant for LLM-powered workflows, API integrations, local automation and intelligent task management. Unifies Slack, Jira, Gmail/Calendar and Confluence with AI daily briefings, persistent memory, privacy-first local storage and event-driven reminders.  
+`Electron` `React` `TypeScript` `Node.js` `LLMs`  
+*Personal Project — Happy to discuss this project if you're interested to know more about it.*
+
 **AI Testing Automation Platform**  
 <img src="./profile-assets/ai-testing-platform-card.png" alt="AI Testing Automation Platform" width="100%"/>  
 AI-driven QA ecosystem across web, mobile and API testing.  
