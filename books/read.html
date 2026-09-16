@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Read | Pournima Tele</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --room: #1b140e;
+      --paper: #fbf6ea;
+      --ink: #1f2937;
+      --muted: #6b5e4e;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: radial-gradient(1200px 700px at 50% 0%, #3b2a1a, var(--room));
+      color: #f8fafc;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    }
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.28);
+    }
+    .bar a {
+      color: #fde68a;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .bar h1 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .ro {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #d6c4b0;
+    }
+    .stage {
+      min-height: calc(100% - 112px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 12px 24px;
+    }
+    .spread {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: min(980px, 96vw);
+      min-height: min(72vh, 640px);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 4px 12px 12px 4px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+      position: relative;
+    }
+    .spread::after {
+      content: "";
+      position: absolute;
+      inset: 0 50% 0 auto;
+      width: 18px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.08), transparent 70%);
+      pointer-events: none;
+    }
+    .leaf {
+      padding: 36px 34px;
+      min-height: 560px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.03), transparent 12%),
+        var(--paper);
+    }
+    .leaf.cover {
+      padding: 0;
+      background: #0b1220;
+      display: flex;
+    }
+    .leaf.cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      min-height: 560px;
+    }
+    .leaf canvas {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .kicker {
+      margin: 0 0 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7c3aed;
+    }
+    .leaf h2 {
+      margin: 0 0 16px;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+    .leaf p {
+      margin: 0 0 14px;
+      font-family: "Libre Baskerville", Georgia, serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .blank {
+      background: #f3ead6;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 16px 18px;
+    }
+    .nav button {
+      border: 0;
+      background: #fde68a;
+      color: #1b140e;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+    .nav button:disabled { opacity: 0.4; cursor: default; }
+    .pg { font-size: 12px; color: #e7d5c0; min-width: 90px; text-align: center; }
+    .missing {
+      max-width: 560px;
+      background: #fbf6ea;
+      color: #1f2937;
+      padding: 28px;
+      border-radius: 12px;
+    }
+    @media (max-width: 800px) {
+      .spread { grid-template-columns: 1fr; }
+      .spread::after { display: none; }
+      .leaf, .leaf.cover img { min-height: 70vh; }
+      .right { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <a href="../books.html">← Books by me</a>
+    <h1 id="title">Reading</h1>
+    <span class="ro">Read only</span>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="nav">
+    <button type="button" id="prev">← Previous</button>
+    <span class="pg" id="pg"></span>
+    <button type="button" id="next">Next →</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id") || "the-last-line-of-defense";
+    const root = "../";
+    let mode = "pages";
+    let book = null;
+    let pages = [];
+    let pdfDoc = null;
+    let index = 0;
+    const twoUp = function () { return window.matchMedia("(min-width: 801px)").matches; };
+
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    }
+
+    function pageCount() {
+      if (mode === "pdf") return pdfDoc.numPages;
+      return pages.length;
+    }
+    function step() { return twoUp() ? 2 : 1; }
+
+    function textLeaf(page) {
+      const el = document.createElement("article");
+      el.className = "leaf";
+      if (!page) { el.classList.add("blank"); return el; }
+      el.innerHTML = (page.kicker ? '<p class="kicker">' + page.kicker + "</p>" : "") +
+        (page.title ? "<h2>" + page.title + "</h2>" : "") +
+        (page.body || []).map(function (p) { return "<p>" + p + "</p>"; }).join("");
+      return el;
+    }
+
+    function coverLeaf() {
+      const el = document.createElement("article");
+      el.className = "leaf cover";
+      const img = document.createElement("img");
+      img.src = root + book.cover;
+      img.alt = book.title + " cover";
+      el.appendChild(img);
+      return el;
+    }
+
+    async function pdfLeaf(pageNumber) {
+      const el = document.createElement("article");
+      el.className = "leaf cover";
+      if (!pageNumber || pageNumber > pdfDoc.numPages) {
+        el.className = "leaf blank";
+        return el;
+      }
+      const page = await pdfDoc.getPage(pageNumber);
+      const viewport = page.getViewport({ scale: 1.35 });
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+      el.appendChild(canvas);
+      return el;
+    }
+
+    async function render() {
+      const stage = document.getElementById("stage");
+      stage.innerHTML = "";
+      const spread = document.createElement("div");
+      spread.className = "spread";
+      const leftN = index + 1;
+      const rightN = index + 2;
+      if (mode === "pdf") {
+        spread.appendChild(await pdfLeaf(leftN));
+        if (twoUp()) spread.appendChild(await pdfLeaf(rightN <= pageCount() ? rightN : 0));
+      } else {
+        const left = pages[index];
+        const right = pages[index + 1];
+        spread.appendChild(left && left.type === "cover" ? coverLeaf() : textLeaf(left));
+        if (twoUp()) spread.appendChild(right && right.type === "cover" ? coverLeaf() : textLeaf(right));
+      }
+      stage.appendChild(spread);
+      document.getElementById("pg").textContent = (index + 1) + " / " + pageCount();
+      document.getElementById("prev").disabled = index <= 0;
+      document.getElementById("next").disabled = index + step() >= pageCount();
+    }
+
+    function go(delta) {
+      const next = Math.max(0, Math.min(index + delta, Math.max(0, pageCount() - 1)));
+      const aligned = twoUp() ? next - (next % 2) : next;
+      if (aligned === index && delta !== 0) return;
+      index = aligned;
+      render();
+    }
+
+    document.getElementById("prev").onclick = function () { go(-step()); };
+    document.getElementById("next").onclick = function () { go(step()); };
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") go(step());
+      if (e.key === "ArrowLeft") go(-step());
+    });
+    window.addEventListener("resize", function () { render(); });
+
+    fetch("./catalog.json")
+      .then(function (res) { return res.json(); })
+      .then(async function (data) {
+        book = (data.books || []).find(function (b) { return b.id === id; }) || data.books[0];
+        document.title = book.title + " | Pournima Tele";
+        document.getElementById("title").textContent = book.title + " — " + book.subtitle;
+        const pdfRes = book.pdfReady
+          ? await fetch(root + book.pdf, { method: "HEAD" }).catch(function () { return { ok: false }; })
+          : { ok: false };
+        if (pdfRes.ok && window.pdfjsLib) {
+          mode = "pdf";
+          pdfDoc = await pdfjsLib.getDocument(root + book.pdf).promise;
+          return render();
+        }
+        const pageRes = await fetch(root + book.pages);
+        pages = (await pageRes.json()).pages || [];
+        return render();
+      })
+      .catch(function () {
+        document.getElementById("stage").innerHTML = '<div class="missing"><p>This book could not be opened.</p></div>';
+      });
+  </script>
+</body>
+</html>

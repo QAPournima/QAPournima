@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": "the-last-line-of-defense",
+      "title": "The Last Line of Defense",
+      "subtitle": "By QA",
+      "author": "Pournima Tele",
+      "year": "2025",
+      "cover": "profile-assets/books/last-line-cover.png",
+      "pdf": "books/pdfs/the-last-line-of-defense.pdf",
+      "pdfReady": false,
+      "pages": "books/pages/the-last-line-of-defense.json",
+      "blurb": "Real stories, lessons and the care that goes into making software work — from 14+ years in testing."
+    }
+  ]
+}

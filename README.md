@@ -159,7 +159,7 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 - [AI-Driven Testing](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
 - [Breaking Silos in Agile Teams](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
 
-**Book:** [The Last Line of Defense — By QA](https://simplebooklet.com/thelastlineofdefensebyqa#page=1)
+**Book:** [The Last Line of Defense — By QA](https://qapournima.github.io/QAPournima/books/read.html?id=the-last-line-of-defense) · [Books by me](https://qapournima.github.io/QAPournima/books.html)
 
 ---
 

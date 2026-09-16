@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "type": "cover"
+    },
+    {
+      "type": "text",
+      "kicker": "A book by Pournima Tele",
+      "title": "The Last Line of Defense",
+      "body": [
+        "By QA",
+        "After spending over 14 years in the world of software testing — asking questions, breaking things on purpose, and fighting for better quality — I poured my journey, lessons, and wild bug stories into this book.",
+        "This on-site edition lives here so you can read it without leaving this site. The original SimpleBooklet copy is no longer published."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "About this book",
+      "title": "For testers — and anyone in tech",
+      "body": [
+        "This book isn’t just for testers. It’s for anyone who’s ever worked in tech, been curious about what QA really does, or just wants a behind-the-scenes look at the chaos and care that goes into making software work.",
+        "I’ve shared real-life stories (the funny and the frustrating), lessons I wish I knew earlier, and a whole lot of heart."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "The last line of defense",
+      "title": "Celebrate the testers",
+      "body": [
+        "If it makes you laugh, nod, or think differently about QA, I would love it if you gave it a read.",
+        "Thanks for being part of this journey with me. Let’s celebrate the testers — the last line of defense."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "About the author",
+      "title": "Pournima Tele",
+      "body": [
+        "Hands-on Senior Software Engineer with 14+ years in Quality Engineering, Test Automation and AI-driven development.",
+        "After leading QA teams, I returned to hands-on engineering — currently Senior Software Quality Assurance Engineer in Aircall’s Messaging team, and Engineering Team Lead for QA Automation, working with AI-driven development.",
+        "Based in Milton Keynes, UK. Open to collaboration, new opportunities and exciting projects."
+      ]
+    }
+  ]
+}

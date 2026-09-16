@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Books by me | Pournima Tele</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --card: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+      --title: #0f172a;
+      --purple: #6d28d9;
+      --wood: #8b5a2b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      color: var(--text);
+    }
+    html, body { width: 100%; overflow-x: hidden; }
+    .page { width: 100%; max-width: 1080px; margin: 0 auto; background: #fff; }
+    .banner {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .wrap { padding: 24px 22px 48px; background: var(--bg); }
+    .back {
+      display: inline-flex;
+      margin-bottom: 14px;
+      color: #2563eb;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; color: var(--title); }
+    .intro { margin: 0 0 22px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+    .shelf-unit {
+      background: linear-gradient(180deg, #3b2a1a 0%, #2a1c12 100%);
+      border-radius: 18px;
+      padding: 28px 24px 0;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+    }
+    .shelf {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 22px;
+      min-height: 260px;
+      padding: 8px 8px 0;
+    }
+    .book-card {
+      width: 150px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 8px;
+    }
+    .book-face {
+      width: 138px;
+      height: 200px;
+      border-radius: 2px 8px 8px 2px;
+      overflow: hidden;
+      transform: perspective(700px) rotateY(-12deg);
+      box-shadow:
+        8px 12px 24px rgba(0, 0, 0, 0.35),
+        inset -8px 0 0 rgba(255, 255, 255, 0.08);
+      background: #0f172a;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .book-card:hover .book-face,
+    .book-card:focus-visible .book-face {
+      transform: perspective(700px) rotateY(-4deg) translateY(-8px);
+      box-shadow: 10px 18px 30px rgba(0, 0, 0, 0.4);
+    }
+    .book-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .meta { text-align: center; width: 150px; }
+    .meta h2 {
+      margin: 0 0 4px;
+      font-size: 13px;
+      line-height: 1.3;
+      color: #f8fafc;
+      font-weight: 700;
+    }
+    .meta p { margin: 0; font-size: 11px; color: #d6c4b0; }
+    .plank {
+      height: 18px;
+      margin: 0 -8px;
+      background: linear-gradient(180deg, #c08457, var(--wood) 40%, #6b3f1d);
+      border-radius: 0 0 14px 14px;
+      box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25), 0 10px 18px rgba(0, 0, 0, 0.25);
+    }
+    .soon {
+      width: 138px;
+      height: 200px;
+      border: 2px dashed rgba(255, 255, 255, 0.28);
+      border-radius: 8px;
+      color: #e7d5c0;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+      margin-bottom: 34px;
+    }
+    .note {
+      margin: 16px 4px 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .banner { height: 140px; }
+      .wrap { padding: 16px 14px 32px; }
+      h1 { font-size: 22px; }
+      .shelf-unit { padding: 20px 14px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img class="banner" src="./profile-assets/banner.png?v=5" alt="Pournima Tele banner" />
+    <div class="wrap">
+      <a class="back" href="./index.html">← Back to dashboard</a>
+      <h1>Books by me</h1>
+      <p class="intro">A shelf of books I have written. Click a cover to open the read-only viewer on this site.</p>
+      <div class="shelf-unit">
+        <div class="shelf" id="shelf"></div>
+        <div class="plank"></div>
+      </div>
+      <p class="note">Click a cover to open the read-only viewer. More titles can be added to this shelf over time.</p>
+    </div>
+  </div>
+  <script>
+    function card(book) {
+      const a = document.createElement("a");
+      a.className = "book-card";
+      a.href = "./books/read.html?id=" + encodeURIComponent(book.id);
+      a.innerHTML =
+        '<div class="book-face"><img src="./' + book.cover + '" alt="' + book.title + ' cover" /></div>' +
+        '<div class="meta"><h2>' + book.title + '</h2><p>' + book.subtitle + " · " + book.author + "</p></div>";
+      return a;
+    }
+    fetch("./books/catalog.json")
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        const shelf = document.getElementById("shelf");
+        (data.books || []).forEach(function (book) { shelf.appendChild(card(book)); });
+        const soon = document.createElement("div");
+        soon.className = "soon";
+        soon.textContent = "Next book coming soon";
+        shelf.appendChild(soon);
+      });
+  </script>
+</body>
+</html>
