@@ -112,8 +112,6 @@
       line-height: 1.5;
       color: var(--muted);
     }
-    .medium-list { display: grid; gap: 12px; }
-    .medium-list .card { padding: 16px 18px; }
     @media (max-width: 900px) {
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
@@ -137,28 +135,7 @@
       <div class="grid" id="wix"></div>
 
       <h2>Medium</h2>
-      <div class="medium-list">
-        <a class="card" href="https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1" target="_blank" rel="noopener noreferrer">
-          <div class="meta"><span class="src medium">Medium</span></div>
-          <h3>The Role of QA in an Agile Scrum Team</h3>
-          <p>How QA navigates the product life cycle inside Scrum.</p>
-        </a>
-        <a class="card" href="https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1" target="_blank" rel="noopener noreferrer">
-          <div class="meta"><span class="src medium">Medium</span></div>
-          <h3>Understanding Shift-Left Testing</h3>
-          <p>A practical guide to finding issues earlier.</p>
-        </a>
-        <a class="card" href="https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560" target="_blank" rel="noopener noreferrer">
-          <div class="meta"><span class="src medium">Medium</span></div>
-          <h3>AI-Driven Testing</h3>
-          <p>Using automation and AI to test faster without losing quality.</p>
-        </a>
-        <a class="card" href="https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c" target="_blank" rel="noopener noreferrer">
-          <div class="meta"><span class="src medium">Medium</span></div>
-          <h3>Breaking Silos in Agile Teams</h3>
-          <p>Collaboration and alignment across engineering and QA.</p>
-        </a>
-      </div>
+      <div class="grid" id="medium"></div>
     </div>
   </div>
   <script>
@@ -167,37 +144,75 @@
         return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
       });
     }
+    function renderCards(list, posts, sourceLabel, sourceClass) {
+      posts.forEach(function (post) {
+        const a = document.createElement("a");
+        a.className = "card";
+        a.href = post.url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        const initial = (post.title || "A").replace(/^[^\w]+/, "").charAt(0).toUpperCase() || "A";
+        const thumb = post.image
+          ? '<img src="' + esc(post.image) + '" alt="" /><div class="fallback" hidden>' + esc(initial) + "</div>"
+          : '<div class="fallback">' + esc(initial) + "</div>";
+        a.innerHTML =
+          '<div class="thumb">' + thumb + "</div>" +
+          '<div class="body">' +
+          '<div class="meta"><span class="src' + (sourceClass ? " " + sourceClass : "") + '">' + sourceLabel + "</span><span>" + esc(post.displayDate || "") + "</span></div>" +
+          "<h3>" + esc(post.title) + "</h3>" +
+          "<p>" + esc(post.excerpt || "") + "</p>" +
+          "</div>";
+        list.appendChild(a);
+        const img = a.querySelector("img");
+        if (img) {
+          img.addEventListener("error", function () {
+            img.style.display = "none";
+            const fb = a.querySelector(".fallback");
+            if (fb) fb.hidden = false;
+          });
+        }
+      });
+    }
+    const medium = [
+      {
+        title: "The Role of QA in an Agile Scrum Team",
+        url: "https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1",
+        excerpt: "How QA navigates the product life cycle inside Scrum.",
+        displayDate: "10 Jan 2025",
+        image: "https://static.wixstatic.com/media/cbe8c3_9dba09dfed6d4073ac436e6482601a19~mv2.png/v1/fit/w_1000,h_800,al_c,q_80/file.png"
+      },
+      {
+        title: "Understanding Shift-Left Testing",
+        url: "https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1",
+        excerpt: "A practical guide to finding issues earlier.",
+        displayDate: "20 Feb 2025",
+        image: "https://static.wixstatic.com/media/78d045_634fe225a107441ca6a9ddfc58bd28f9~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png"
+      },
+      {
+        title: "AI-Driven Testing",
+        url: "https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560",
+        excerpt: "Using automation and AI to test faster without losing quality.",
+        displayDate: "13 Mar 2025",
+        image: "https://cdn-images-1.medium.com/max/1024/0*acQxGvFklry1MdLl"
+      },
+      {
+        title: "Breaking Silos in Agile Teams",
+        url: "https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c",
+        excerpt: "Collaboration and alignment across engineering and QA.",
+        displayDate: "Medium",
+        image: ""
+      }
+    ];
+    renderCards(document.getElementById("medium"), medium, "Medium", "medium");
     fetch("./writing/catalog.json")
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        const list = document.getElementById("wix");
-        (data.posts || []).filter(function (post) { return post.source !== "medium"; }).forEach(function (post) {
-          const a = document.createElement("a");
-          a.className = "card";
-          a.href = post.url;
-          a.target = "_blank";
-          a.rel = "noopener noreferrer";
-          const initial = (post.title || "W").replace(/^[^\w]+/, "").charAt(0).toUpperCase() || "W";
-          const thumb = post.image
-            ? '<img src="' + esc(post.image) + '" alt="" /><div class="fallback" hidden>' + esc(initial) + "</div>"
-            : '<div class="fallback">' + esc(initial) + "</div>";
-          a.innerHTML =
-            '<div class="thumb">' + thumb + "</div>" +
-            '<div class="body">' +
-            '<div class="meta"><span class="src">Wix</span><span>' + esc(post.displayDate) + "</span></div>" +
-            "<h3>" + esc(post.title) + "</h3>" +
-            "<p>" + esc(post.excerpt) + "</p>" +
-            "</div>";
-          list.appendChild(a);
-          const img = a.querySelector("img");
-          if (img) {
-            img.addEventListener("error", function () {
-              img.style.display = "none";
-              const fb = a.querySelector(".fallback");
-              if (fb) fb.hidden = false;
-            });
-          }
-        });
+        renderCards(
+          document.getElementById("wix"),
+          (data.posts || []).filter(function (post) { return post.source !== "medium"; }),
+          "Wix",
+          ""
+        );
       });
   </script>
 </body>
