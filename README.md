@@ -13,7 +13,7 @@ AI-Driven Development · QA Automation · Prompt Engineering
 <a href="https://www.linkedin.com/in/pournimatele"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=flat-square&logo=github&logoColor=white" alt="Portfolio"/></a>
-<a href="mailto:<pournima.csm@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="mailto:pournima.csm@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 
 </div>
 
