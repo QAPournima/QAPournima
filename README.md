@@ -130,8 +130,10 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 
 ### AI + QA Capabilities
 
-- AI Test Generation · Intelligent Bug Analysis · AI Agent Workflows
-- LLM Testing · Conversational AI Testing · Voice Agent Testing
+- AI-Driven Development · AI Test Generation · Requirement-Driven Testing
+- Intelligent Bug Analysis · AI Agent Workflows · LLM Testing
+- Conversational AI Testing · Voice Agent Testing · Synthetic Monitoring
+- Observability · Slack Automation · AI Failure Analysis
 - Risk-Based Testing · Prompt Engineering · Guardrail Testing
 - Prompt-Injection Testing · Hallucination Detection · OpenCode / LLMGateway
 
