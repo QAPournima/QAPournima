@@ -16,28 +16,6 @@ ROOT = Path(__file__).resolve().parents[1]
 FEED = "https://pournimacsm.wixsite.com/qapournima/blog-feed.xml"
 OUT = ROOT / "writing" / "catalog.json"
 
-MEDIUM = [
-    {
-        "id": "ai-driven-testing",
-        "title": "AI-Driven Testing",
-        "url": "https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560",
-        "date": "2024-01-01",
-        "displayDate": "Medium",
-        "excerpt": "Using automation and AI to test faster without losing quality.",
-        "source": "medium",
-    },
-    {
-        "id": "breaking-silos-in-agile-teams",
-        "title": "Breaking Silos in Agile Teams",
-        "url": "https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c",
-        "date": "2024-01-01",
-        "displayDate": "Medium",
-        "excerpt": "Collaboration and alignment across engineering and QA.",
-        "source": "medium",
-    },
-]
-
-
 def clean(text: str) -> str:
     text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
     return re.sub(r"\s+", " ", text).strip()
@@ -66,8 +44,10 @@ def load_feed() -> list[dict]:
         except (TypeError, ValueError):
             dt = datetime.now(timezone.utc)
         excerpt = clean(tag("description"))
-        if len(excerpt) > 220:
-            excerpt = excerpt[:217].rstrip() + "…"
+        if len(excerpt) > 140:
+            excerpt = excerpt[:137].rstrip() + "…"
+        enclosure = item.find("enclosure")
+        image = (enclosure.get("url") or "").strip() if enclosure is not None else ""
         posts.append(
             {
                 "id": slug_from(url),
@@ -76,6 +56,7 @@ def load_feed() -> list[dict]:
                 "date": dt.date().isoformat(),
                 "displayDate": dt.strftime("%-d %b %Y"),
                 "excerpt": excerpt,
+                "image": image,
                 "source": "wix",
             }
         )
@@ -85,9 +66,7 @@ def load_feed() -> list[dict]:
 
 def main() -> None:
     wix = load_feed()
-    wix_titles = {p["title"].lower() for p in wix}
-    extra = [p for p in MEDIUM if p["title"].lower() not in wix_titles]
-    catalog = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "posts": wix + extra}
+    catalog = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "posts": wix}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {len(catalog['posts'])} posts to {OUT}")

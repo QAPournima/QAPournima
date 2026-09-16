@@ -53,23 +53,14 @@
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
     }
     .card:hover { border-color: #c7d2fe; }
-    .meta {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 6px;
+    .kind {
+      margin: 0 0 6px;
       font-size: 11px;
-      font-weight: 700;
-      color: var(--muted);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #15803d;
     }
-    .src {
-      background: #eef2ff;
-      color: #3730a3;
-      border-radius: 999px;
-      padding: 2px 8px;
-    }
-    .src.medium { background: #ecfdf3; color: #166534; }
     .card h2 { margin: 0 0 6px; font-size: 17px; color: var(--title); line-height: 1.35; }
     .card p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); }
     @media (max-width: 720px) {
@@ -84,35 +75,31 @@
     <img class="banner" src="./profile-assets/banner.png?v=5" alt="Pournima Tele banner" />
     <div class="wrap">
       <a class="back" href="./index.html">← Back to dashboard</a>
-      <h1>Writing & blogs</h1>
-      <p class="intro">All posts from my Wix blog, plus selected Medium articles. Click a card to read the full post.</p>
-      <div class="list" id="list"></div>
+      <h1>Writing</h1>
+      <p class="intro">Articles on Medium. Blogs live on a separate page.</p>
+      <div class="list">
+        <a class="card" href="https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1" target="_blank" rel="noopener noreferrer">
+          <p class="kind">Medium</p>
+          <h2>The Role of QA in an Agile Scrum Team</h2>
+          <p>How QA navigates the product life cycle inside Scrum.</p>
+        </a>
+        <a class="card" href="https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1" target="_blank" rel="noopener noreferrer">
+          <p class="kind">Medium</p>
+          <h2>Understanding Shift-Left Testing</h2>
+          <p>A practical guide to finding issues earlier.</p>
+        </a>
+        <a class="card" href="https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560" target="_blank" rel="noopener noreferrer">
+          <p class="kind">Medium</p>
+          <h2>AI-Driven Testing</h2>
+          <p>Using automation and AI to test faster without losing quality.</p>
+        </a>
+        <a class="card" href="https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c" target="_blank" rel="noopener noreferrer">
+          <p class="kind">Medium</p>
+          <h2>Breaking Silos in Agile Teams</h2>
+          <p>Collaboration and alignment across engineering and QA.</p>
+        </a>
+      </div>
     </div>
   </div>
-  <script>
-    function esc(s) {
-      return String(s || "").replace(/[&<>"']/g, function (c) {
-        return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
-      });
-    }
-    fetch("./writing/catalog.json")
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        const list = document.getElementById("list");
-        (data.posts || []).forEach(function (post) {
-          const a = document.createElement("a");
-          a.className = "card";
-          a.href = post.url;
-          a.target = "_blank";
-          a.rel = "noopener noreferrer";
-          const label = post.source === "medium" ? "Medium" : "Wix blog";
-          a.innerHTML =
-            '<div class="meta"><span class="src' + (post.source === "medium" ? " medium" : "") + '">' + label + "</span><span>" + esc(post.displayDate) + "</span></div>" +
-            "<h2>" + esc(post.title) + "</h2>" +
-            "<p>" + esc(post.excerpt) + "</p>";
-          list.appendChild(a);
-        });
-      });
-  </script>
 </body>
 </html>
