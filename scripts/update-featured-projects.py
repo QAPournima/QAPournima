@@ -63,13 +63,17 @@ def list_public_repos() -> list[dict]:
 
 
 def card(repo: dict) -> str:
-    name = repo["name"]
+    name = repo["name"].replace("_", " ").replace("-", " ")
     url = repo["html_url"]
+    desc = (repo.get("description") or "GitHub project").strip()
+    if len(desc) > 90:
+        desc = desc[:87] + "..."
+    lang = (repo.get("language") or "").strip()
+    lang_bit = f"<br/><code>{lang}</code>" if lang else ""
     return (
         f'<td width="50%" valign="top">\n'
-        f'<a href="{url}">\n'
-        f'<img src="https://github-readme-stats.vercel.app/api/pin/?username={USERNAME}&repo={name}&hide_border=true" alt="{name}" width="100%"/>\n'
-        f"</a>\n"
+        f'<a href="{url}"><strong>{name}</strong></a><br/>\n'
+        f"{desc}{lang_bit}\n"
         f"</td>"
     )
 
@@ -77,7 +81,7 @@ def card(repo: dict) -> str:
 def render(repos: list[dict]) -> str:
     if not repos:
         return f"{START}\n{END}"
-    rows = ["<strong>More GitHub Projects</strong>", "", "<table>"]
+    rows = ["### More GitHub Projects", "", "<table>"]
     for i in range(0, len(repos), 2):
         chunk = repos[i : i + 2]
         rows.append("<tr>")
