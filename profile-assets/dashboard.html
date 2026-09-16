@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pournima Tele</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --card: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+      --title: #0f172a;
+      --line: #e8eef7;
+      --blue: #2563eb;
+      --purple: #6d28d9;
+      --green: #059669;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      color: var(--text);
+    }
+    .page {
+      width: 1440px;
+      margin: 0 auto;
+      background: #fff;
+      overflow: hidden;
+    }
+    .banner {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+    .shell {
+      display: grid;
+      grid-template-columns: 250px 1fr 300px;
+      gap: 16px;
+      padding: 16px 18px 20px;
+      background: var(--bg);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #edf2f7;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+    .stack { display: flex; flex-direction: column; gap: 16px; }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .h-blue { color: #1d4ed8; }
+    .h-purple { color: #6d28d9; }
+    .h-navy { color: #1e3a8a; }
+    .h-teal { color: #0f766e; }
+    .h-green { color: #15803d; }
+    p { margin: 0 0 10px; font-size: 12.5px; line-height: 1.55; }
+    .about-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+      font-size: 12.5px;
+    }
+    .about-list li {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin: 7px 0;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      margin-top: 5px; flex: none;
+    }
+    .group { margin-top: 12px; }
+    .group-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 10.5px;
+      font-weight: 600;
+      background: #f8fafc;
+      border: 1px solid #eef2f7;
+    }
+    .loc {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: #334155;
+    }
+    .loc small { color: var(--muted); display: block; margin-top: 4px; }
+    .contact {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 2px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      border: 1px solid #e6edf7;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #334155;
+      text-decoration: none;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .project {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+    }
+    .project img { width: 100%; height: 92px; object-fit: cover; display: block; }
+    .project-body { padding: 10px 12px 12px; }
+    .project h3 { margin: 0 0 6px; font-size: 13px; color: #0f172a; }
+    .project p { margin: 0 0 8px; font-size: 11.5px; color: #64748b; min-height: 46px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+    .tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4338ca;
+    }
+    .view {
+      font-size: 12px;
+      font-weight: 700;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .caps {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .cap {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 14px;
+      text-align: center;
+      padding: 12px 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #334155;
+    }
+    .cap .ico { font-size: 22px; margin-bottom: 6px; }
+    .snapshot { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 10px; }
+    .mini {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .stat { display: flex; justify-content: space-between; font-size: 12px; margin: 8px 0; }
+    .stat b { color: #0f172a; }
+    .lang { display: flex; justify-content: space-between; font-size: 11.5px; margin: 5px 0; }
+    .bar { height: 7px; border-radius: 99px; background: #eef2f7; overflow: hidden; margin: 2px 0 8px; }
+    .bar span { display: block; height: 100%; }
+    .right-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .stat-pill {
+      background: #fff;
+      border: 1px solid #e6edf7;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+    .domains {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .domain {
+      background: #f8fbff;
+      border: 1px solid #eaf0f8;
+      border-radius: 12px;
+      padding: 9px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .certs { display: flex; flex-wrap: wrap; gap: 6px; }
+    .cert {
+      background: #eef4ff;
+      color: #1d4ed8;
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .write a, .write span {
+      display: block;
+      font-size: 12.5px;
+      color: #2563eb;
+      text-decoration: none;
+      margin: 6px 0;
+    }
+    .book {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+    }
+    .cover {
+      width: 54px; height: 54px;
+      border-radius: 10px;
+      background: #0f172a;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6px;
+    }
+    .explore { display: flex; flex-wrap: wrap; gap: 6px; }
+    .explore span {
+      background: #ecfdf3;
+      color: #166534;
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .connect-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .footer {
+      text-align: center;
+      color: #7c3aed;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 4px 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="dashboard">
+    <img class="banner" src="./banner.png" alt="Pournima Tele banner" />
+    <div class="shell">
+      <aside class="stack" id="col-left">
+        <section class="card">
+          <h2 class="h-blue">👤 About Me</h2>
+          <p>I'm a hands-on Senior Software Engineer with 14+ years of experience in Quality Engineering, Test Automation and AI-driven development.</p>
+          <p>After leading QA teams for several years, I moved back into a hands-on role to build deeper expertise in AI, prompt engineering and modern engineering practices.</p>
+          <ul class="about-list">
+            <li><span class="dot" style="background:#3b82f6"></span>AI / LLM Engineering & Prompt Engineering</li>
+            <li><span class="dot" style="background:#6366f1"></span>Test Automation & Quality Engineering</li>
+            <li><span class="dot" style="background:#8b5cf6"></span>Backend & Frontend Development</li>
+            <li><span class="dot" style="background:#06b6d4"></span>API & Integration Testing</li>
+            <li><span class="dot" style="background:#10b981"></span>Mobile & Web Automation</li>
+            <li><span class="dot" style="background:#f59e0b"></span>CI/CD & Engineering Productivity</li>
+            <li><span class="dot" style="background:#ef4444"></span>Observability & Continuous Testing</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2 class="h-blue">🛠️ Tech Stack & Tools</h2>
+          <div class="group"><div class="group-title">AI & LLM</div><div class="pills">
+            <span class="pill">OpenAI</span><span class="pill">Gemini</span><span class="pill">Claude</span><span class="pill">Prompt Eng.</span>
+          </div></div>
+          <div class="group"><div class="group-title">Languages & Frameworks</div><div class="pills">
+            <span class="pill">Python</span><span class="pill">Java</span><span class="pill">Flask</span><span class="pill">SQL</span>
+          </div></div>
+          <div class="group"><div class="group-title">Automation & Testing</div><div class="pills">
+            <span class="pill">Playwright</span><span class="pill">Selenium</span><span class="pill">Appium</span><span class="pill">Maestro</span>
+            <span class="pill">Cucumber</span><span class="pill">JUnit</span><span class="pill">TestNG</span>
+          </div></div>
+          <div class="group"><div class="group-title">DevOps & Cloud</div><div class="pills">
+            <span class="pill">Docker</span><span class="pill">GitLab</span><span class="pill">Jenkins</span><span class="pill">Git</span>
+          </div></div>
+          <div class="group"><div class="group-title">Quality & Observability</div><div class="pills">
+            <span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">Datadog</span><span class="pill">Postman</span>
+            <span class="pill">MongoDB</span><span class="pill">Zephyr</span>
+          </div></div>
+          <div class="loc">📍 Available for<br/><b>Milton Keynes, UK</b><small>Open to relocate (UK / France)</small></div>
+        </section>
+      </aside>
+
+      <main class="stack" id="col-center">
+        <div class="contact">
+          <a class="chip" href="https://www.linkedin.com/in/pournimatele">in LinkedIn</a>
+          <a class="chip" href="https://github.com/QAPournima">GitHub</a>
+          <a class="chip" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
+          <a class="chip" href="mailto:pournima.tele@gmail.com">pournima.tele@gmail.com</a>
+        </div>
+        <section>
+          <h2 class="h-purple">✨ Featured AI Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <img src="./ai-testing-platform.png" alt="AI Testing Automation Platform" />
+              <div class="project-body">
+                <h3>AI Testing Automation Platform</h3>
+                <p>Scalable AI-driven QA ecosystem for web, mobile and API testing with intelligent automation, bug analysis and reporting.</p>
+                <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Playwright</span><span class="tag">OpenAI</span><span class="tag">Gemini</span></div>
+                <a class="view" href="https://github.com/QAPournima/Zap-Prototype">View Project →</a>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./genqa-ai-agent.png" alt="GenQA AI Agent" />
+              <div class="project-body">
+                <h3>GenQA AI Agent</h3>
+                <p>AI-powered QA assistant for test case generation, validation, updates and exploratory testing.</p>
+                <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">LLMs</span><span class="tag">Jira</span><span class="tag">Automation</span></div>
+                <span class="view">Internal / Private Project</span>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./playwright-ai-automation.png" alt="Playwright AI Automation" />
+              <div class="project-body">
+                <h3>Playwright / AI Automation</h3>
+                <p>Modern web automation framework with Playwright and AI for faster, reliable test execution.</p>
+                <div class="tags"><span class="tag">JavaScript</span><span class="tag">Playwright</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span></div>
+                <a class="view" href="https://github.com/QAPournima/playwrightWithJavascript">View Project →</a>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./mobile-maestro-automation.png" alt="Mobile Automation" />
+              <div class="project-body">
+                <h3>Mobile Automation (Appium + Maestro)</h3>
+                <p>Robust mobile automation framework for iOS & Android with parallel execution and CI/CD.</p>
+                <div class="tags"><span class="tag">Java</span><span class="tag">Appium</span><span class="tag">Maestro</span><span class="tag">Jenkins</span><span class="tag">Docker</span></div>
+                <a class="view" href="https://github.com/QAPournima/QAAutomationTest_Mobile">View Project →</a>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./api-backend-automation.png" alt="API and Backend Automation" />
+              <div class="project-body">
+                <h3>API & Backend Automation</h3>
+                <p>API testing and backend automation with Postman, REST-assured and integration testing.</p>
+                <div class="tags"><span class="tag">Java</span><span class="tag">REST-assured</span><span class="tag">Postman</span><span class="tag">SQL</span><span class="tag">MongoDB</span></div>
+                <span class="view">Internal / Private Project</span>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./llm-conversational-ai-testing.png" alt="LLM Conversational AI Testing" />
+              <div class="project-body">
+                <h3>LLM / Conversational AI Testing</h3>
+                <p>Testing AI-powered features — chatbots, voice agents, NLP, guardrails and hallucination testing.</p>
+                <div class="tags"><span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">NLP</span><span class="tag">Jira</span><span class="tag">TestNG</span></div>
+                <span class="view">Internal / Private Project</span>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="h-navy">⚡ AI + QA Capabilities</h2>
+          <div class="caps">
+            <div class="cap"><div class="ico">📄</div>AI Test Generation</div>
+            <div class="cap"><div class="ico">🐞</div>Intelligent Bug Analysis</div>
+            <div class="cap"><div class="ico">🤖</div>AI Agents & Workflows</div>
+            <div class="cap"><div class="ico">🧠</div>LLM Testing</div>
+            <div class="cap"><div class="ico">💬</div>Conversational AI Testing</div>
+            <div class="cap"><div class="ico">🎙️</div>Voice Agent Testing</div>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="h-blue">📊 Experience Snapshot</h2>
+          <div class="snapshot">
+            <div class="mini">
+              <div class="stat"><span>📦 Total repositories</span><b>45</b></div>
+              <div class="stat"><span>⭐ Followers</span><b>2</b></div>
+              <div class="stat"><span>📝 Public repos</span><b>15</b></div>
+            </div>
+            <div class="mini">
+              <div class="lang"><span>Python</span><span>35.8%</span></div><div class="bar"><span style="width:72%;background:#3b82f6"></span></div>
+              <div class="lang"><span>Java</span><span>20.2%</span></div><div class="bar"><span style="width:48%;background:#22c55e"></span></div>
+              <div class="lang"><span>JavaScript</span><span>12.6%</span></div><div class="bar"><span style="width:32%;background:#eab308"></span></div>
+              <div class="lang"><span>HTML</span><span>8.2%</span></div><div class="bar"><span style="width:22%;background:#f97316"></span></div>
+            </div>
+            <div class="mini">
+              <div class="group-title">GitHub Trophies</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:22px;line-height:1;margin-top:8px;">
+                <span title="Commits">🏆</span>
+                <span title="Pull Requests">🥇</span>
+                <span title="Issues">🥈</span>
+                <span title="Stars">⭐</span>
+                <span title="Repositories">📦</span>
+                <span title="Followers">👥</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="stack" id="col-right">
+        <div class="right-top">
+          <div class="stat-pill">📅 14+ Years of Experience</div>
+          <div class="stat-pill">🪪 Skilled Worker Visa</div>
+        </div>
+        <section class="card">
+          <h2 class="h-navy">🌐 Domains & Experience</h2>
+          <div class="domains">
+            <div class="domain">📡 Telecom</div>
+            <div class="domain">👥 CRM</div>
+            <div class="domain">🛒 E-commerce</div>
+            <div class="domain">☁️ Cloud Calling</div>
+            <div class="domain">🚗 Ride Hailing</div>
+            <div class="domain">✈️ Travel & Airlines</div>
+            <div class="domain">💼 Payroll</div>
+            <div class="domain">➕ Other</div>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="h-navy">🧾 Certifications</h2>
+          <div class="certs">
+            <span class="cert">ISTQB</span><span class="cert">CSM</span><span class="cert">PRINCE2</span>
+            <span class="cert">PMP</span><span class="cert">CAT</span><span class="cert">CSTM</span>
+          </div>
+        </section>
+        <section class="card write">
+          <h2 class="h-blue">✍️ Writing & Knowledge Sharing</h2>
+          <a href="https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1">The Role of QA in an Agile Scrum Team</a>
+          <a href="https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1">Understanding Shift-Left Testing</a>
+          <a href="https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560">AI-Driven Testing</a>
+          <a href="https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c">Breaking Silos in Agile Teams</a>
+        </section>
+        <section class="card">
+          <h2 class="h-purple">📚 My Book</h2>
+          <div class="book">
+            <div>
+              <p><b>The Last Line of Defense — By QA</b></p>
+              <a class="view" href="https://simplebooklet.com/thelastlineofdefensebyqa#page=1">Read the book →</a>
+            </div>
+            <div class="cover">The Last<br/>Line of<br/>Defense</div>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="h-green">🌱 Currently Exploring</h2>
+          <div class="explore">
+            <span>AI Agents</span><span>LLM Engineering</span><span>Prompt Engineering</span>
+            <span>AI / LLM Testing</span><span>Python</span><span>Backend Development</span>
+            <span>Cloud & DevOps</span><span>Observability</span><span>Engineering Productivity</span>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="h-purple">🤝 Let's Connect</h2>
+          <p>Open to collaboration, new opportunities and exciting projects.</p>
+          <div class="connect-row">
+            <a class="btn" style="background:#0a66c2" href="https://www.linkedin.com/in/pournimatele">LinkedIn</a>
+            <a class="btn" style="background:#111827" href="https://github.com/QAPournima">GitHub</a>
+            <a class="btn" style="background:#6d28d9" href="https://github.com/QAPournima/Portfolio">Portfolio</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+    <div class="footer">Build · Test · Improve · Repeat</div>
+  </div>
+</body>
+</html>
