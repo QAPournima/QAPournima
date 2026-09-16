@@ -1,109 +1,317 @@
-<h1 align="center">🌟 Glad you're here to explore my GitHub! 🌟</h1>
+<div align="center">
+
+<img src="./profile-assets/banner.png" alt="Pournima Tele — Senior Software Engineer, AI-Driven Development, QA Automation and Prompt Engineering" width="100%"/>
+
+# 👋 Hi, I'm Pournima Tele
+
+### Senior Software Engineer · AI-Driven Development · QA Automation · Prompt Engineering
+
+14+ years in Quality Engineering, Test Automation & Software Engineering — building AI-powered testing solutions, automation frameworks and engineering workflows.
+
+<p>
+  <a href="https://www.linkedin.com/in/pournimatele"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
+
+</div>
+
+---
+
+## About Me
+
+Senior Software Engineer with **14+ years** across Quality Engineering, Test Automation and hands-on software development.
+
+I built my career in Quality Engineering — including QA leadership — then deliberately moved back into a **hands-on IC role** to go deeper into AI-driven development, prompt engineering, AI/LLM testing and modern engineering practice.
+
+I work at the intersection of:
+
+- AI-driven software development and prompt engineering
+- AI / LLM testing, AI agents and guardrail evaluation
+- Test automation across web, mobile and APIs
+- Backend and frontend engineering
+- CI/CD, observability and engineering productivity
+
+> I use AI coding agents such as Claude and Cursor as engineering collaborators, while applying strong QA thinking to challenge, test and refine what AI produces.
+
+---
+
+## AI-Driven Engineering Workflow
+
+```text
+Requirements
+     ↓
+Understand & Analyse
+     ↓
+Prompt / Context Engineering
+     ↓
+AI-assisted Implementation
+     ↓
+Test & Validate
+     ↓
+Debug / Refine
+     ↓
+Code Review
+     ↓
+Merge & Deliver
+```
+
+AI is used to accelerate engineering. The output is still validated with engineering and QA principles — not treated as automatically correct.
+
+---
+
+## Featured AI & Automation Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/ai-testing-platform.png" alt="AI Testing Automation Platform" width="100%"/>
+
+### AI Testing Automation Platform
+
+AI-driven QA ecosystem spanning **Web, Mobile and API testing**.
+
+- AI test generation
+- Intelligent bug analysis
+- Voice-enabled QA agent
+- Jira-integrated QA assistant
+- AI exploratory testing
+- Risk-based testing
+- AI-driven chaos testing
+
+`Python` `Flask` `Playwright` `OpenAI` `Gemini` `Jira`
+
+[View Project](https://github.com/QAPournima/Zap-Prototype)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/genqa-ai-agent.png" alt="GenQA AI Agent" width="100%"/>
+
+### GenQA AI Agent
+
+AI assistant for testers that helps create, validate and update test cases and QA artefacts.
+
+`Python` `Playwright` `LLMs` `Jira` `Automation`
+
+<em>Internal / Private Project</em>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/playwright-ai-automation.png" alt="Playwright AI Automation" width="100%"/>
+
+### Playwright / AI Automation
+
+Modern browser automation combined with AI-assisted engineering workflows.
+
+`Playwright` `JavaScript/TypeScript` `GitHub Actions` `Docker`
+
+[View Project](https://github.com/QAPournima/playwrightWithJavascript)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/mobile-maestro-automation.png" alt="Mobile Automation with Appium and Maestro" width="100%"/>
+
+### Mobile Automation — Appium + Maestro
+
+Mobile E2E across **iOS and Android**, including Appium, Maestro and AI-assisted mobile automation.
+
+`Java` `Appium` `Maestro` `Jenkins` `Docker`
+
+[View Project](https://github.com/QAPournima/QAAutomationTest_Mobile)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/api-backend-automation.png" alt="API and Backend Automation" width="100%"/>
+
+### API & Backend Automation
+
+REST API automation, integration testing, backend validation, SQL and MongoDB.
+
+`Java` `REST-assured` `Postman` `SQL` `MongoDB`
+
+<em>Internal / Private Project</em>
+
+</td>
+<td width="50%" valign="top">
+
+<img src="./profile-assets/llm-conversational-ai-testing.png" alt="LLM and Conversational AI Testing" width="100%"/>
+
+### LLM / Conversational AI Testing
+
+Intent recognition, multi-turn conversations, response accuracy, edge cases, adversarial inputs, guardrails, prompt injection, hallucination detection and non-deterministic output evaluation.
+
+`Python` `LLMs` `NLP` `Jira` `TestNG`
+
+<em>Internal / Private Project</em>
+
+</td>
+</tr>
+</table>
+
+---
+
+## AI + QA Capabilities
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="./profile-assets/ai.svg" width="44" alt="AI"/><br/>
+<strong>AI Test Generation</strong>
+</td>
+<td align="center" width="25%">
+<img src="./profile-assets/automation.svg" width="44" alt="Automation"/><br/>
+<strong>Intelligent Bug Analysis</strong>
+</td>
+<td align="center" width="25%">
+<img src="./profile-assets/llm.svg" width="44" alt="LLM"/><br/>
+<strong>AI Agent Workflows</strong>
+</td>
+<td align="center" width="25%">
+<img src="./profile-assets/observability.svg" width="44" alt="Observability"/><br/>
+<strong>LLM Testing</strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong>Conversational AI Testing</strong>
+</td>
+<td align="center">
+<strong>Voice Agent Testing</strong>
+</td>
+<td align="center">
+<strong>Risk-Based Testing</strong>
+</td>
+<td align="center">
+<strong>Prompt Engineering</strong>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong>Guardrail Testing</strong>
+</td>
+<td align="center">
+<strong>Prompt-Injection Testing</strong>
+</td>
+<td align="center">
+<strong>Hallucination Detection</strong>
+</td>
+<td align="center">
+<strong>AI Exploratory Testing</strong>
+</td>
+</tr>
+</table>
+
+---
+
+## Technology Stack
+
+**AI & LLM**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-AI-CC785C?style=flat-square)
+![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-LLM-4F46E5?style=flat-square)
+
+**Languages & Development**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+**Automation**
+
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![Appium](https://img.shields.io/badge/Appium-9C27B0?style=flat-square&logo=appium&logoColor=white)
+![Maestro](https://img.shields.io/badge/Maestro-Mobile%20E2E-6E56CF?style=flat-square)
+![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=flat-square&logo=cucumber&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat-square&logo=junit&logoColor=white)
+![TestNG](https://img.shields.io/badge/TestNG-FF6F00?style=flat-square)
+
+**DevOps & Engineering**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-111827?style=flat-square&logo=githubactions&logoColor=white)
+
+**Quality & Observability**
+
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white)
+![Zephyr](https://img.shields.io/badge/Zephyr-0052CC?style=flat-square)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+
+---
+
+## GitHub Activity
 
 <p align="center">
-  <h3  align="center"> Hi there! 👋 I'm Pournima,  </h3>
- 
- <h4 align="center"> 🚀 QA Automation Engineer 🔹 14+ years of experience in <strong> Quality Assurance & Automation </strong> 🔹 Skilled in <strong> Java, Selenium, Appium, API Testing, CI/CD, Performance Testing </strong> 🔹 Passionate about <strong> Agile Methodologies </strong> and <strong> Continuous Testing. </strong>  
- </h4>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=QAPournima&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=QAPournima&layout=compact&hide_border=true&langs_count=8" alt="Top Languages"/>
 </p>
- 
 
-<p> <h5 align="center"> <i> <em> Step into my GitHub - where ideas come to life, innovation thrives and collaboration fuels the future. 
- Whether you're here to explore, contribute, or get inspired, let's create something extraordinary together! 🚀 </i></em></h5></p>
-
-
----
-
-<h2>👩🏻‍💻 About Me 
-</h2>
-</p>
 <p align="center">
-<ul>  
-  
-<li>🏢 <strong>Currently Working at:</strong> <em>SaaS Company UK </em></li>
-<li>🔭 <strong>Current Role:</strong> <em>Engineering Team Lead - QA Automation</em></li>
-<li>🎓 <strong>Certifications:</strong> <em>ISTQB | PRINCE2 | CSM | CAT Certified</em></li>
-<li>🌐 <strong>Domains:</strong> <em>Telecom | CRM | Ride Hailing | Airlines | Cloud Calling | Oil & Gas | eCommerce</em></li>
-<li>🤖 <strong>Expertise:</strong> <em>Selenium, Appium, Java, API Testing, CI/CD, Performance Testing, AI for Test Automation</em></li>
-<li>💼 <strong>Leadership:</strong> <em>Stakeholder Management | Team Coordination | Agile & Continuous Testing</em></li>
-<li>🛠️ <strong>Tools:</strong> <em>Jira, Confluence, Postman, BrowserStack, Datadog, TFS, HP Quality Center</em></li>
-
-   </li>
-    <li>👯 <strong>Looking to Collaborate On:</strong> <em>AI-driven Automation</em>, <em>Mobile Automation</em>, and <em>Web/Desktop App Automation</em>.</li>
-    <li>💬 <strong>Ask Me About:</strong> QA Process, Automation framework, AI tools, and Github.</li>
-    <li>⚡ <strong>Fun Fact:</strong> I love experimenting with new tools, AI for automation testing and working on POC!</li>
-    
-  </p>
-</ul>
-
-
-## 🚀 **What I Do**  
-- **✅ Test Automation**: Building reliable and scalable automation frameworks for Web, Mobile, and API Testing.
-- **✅ CI/CD Integration**: Automating tests in CI pipelines using tools like **Jenkins, GitHub Actions**, and **Docker**.
-- **✅ Performance Testing**: Ensuring systems scale and perform using **JMeter** and **Load Testing** techniques.
-- **✅ Cloud Testing**: Leveraging **BrowserStack** for cross-browser and mobile testing.
-- **✅ Database Testing**: Proficient in testing **SQL** and **NoSQL (MongoDB)** databases.
+  <img src="https://streak-stats.demolab.com?user=QAPournima&hide_border=true" alt="GitHub Streak"/>
+</p>
 
 ---
-### 👀 Have A look at My portfolio 🌐 [Pournima Tele](https://pournimacsm.wixsite.com/qapournima) for more!
----
 
-### On going Project 🪏 ZapQA-AI-Agent-Tool - Built by QA Engineers. 💫 Zapping QA Processes Fast.(Let's Test Like a Human, Work Like a Bot 🤖)
----
-### 🛠️ **Tech Stack & Tools**
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
-![Appium](https://img.shields.io/badge/Appium-9C27B0?style=flat&logo=appium&logoColor=white)
-![TestNG](https://img.shields.io/badge/TestNG-FF6F00?style=flat)
-![Cucumber](https://img.shields.io/badge/Cucumber-23D300?style=flat&logo=cucumber&logoColor=white)
-![JMeter](https://img.shields.io/badge/JMeter-E2231A?style=flat&logo=apachejmeter&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI/CD-004880?style=flat&logo=githubactions&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat&logo=apachemaven&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat&logo=junit&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![BrowserStack](https://img.shields.io/badge/BrowserStack-FF7A00?style=flat&logo=browserstack&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![OPENAI](https://img.shields.io/badge/OPEN%20AI-style%3Dflat%26logo%3Dhtml5%26logoColor%3Dblack)
+## Career Snapshot
+
+| Focus | Detail |
+| --- | --- |
+| **14+ years** | Quality Engineering, Test Automation and Software Engineering |
+| **AI engineering** | AI agents, LLM workflows, prompt engineering and AI testing |
+| **Automation** | Web, mobile, API and AI-powered automation |
+| **Engineering** | Python, Java, Flask, Playwright, APIs, Docker and CI/CD |
+| **Leadership** | QA leadership, mentoring, stakeholder management and delivery |
+| **Domains** | Telecom, cloud calling, CRM, ride hailing, e-commerce, payroll and travel |
 
 ---
-### 👩🏻‍💻 Some QA & PM Stuff
-* 📄 [Agile Project Test Plan](https://docs.google.com/document/d/1F59OBSLL3hEiZaumOYhSW2lEZPPZGkWJHyc073E5tGY/edit?usp=sharing)
-* 📄 [Test Plan Document](https://docs.google.com/document/d/199Akfm8CvcP6w0pLuVB_M7R8UXNYZSkPQpkUXaZXuRs/edit?usp=sharing)
-* 📄 [Scenario and Test Cases](https://docs.google.com/spreadsheets/d/1DGyj3U07JG-oePgg21ckEBOEsZU-ejdzLSwQzcqEvfE/edit?usp=sharing)
-* 📊 [Bug Report](https://docs.google.com/spreadsheets/d/1xdwkB53Qo4fE_aXe07GSr4oLAlL5ZG5QCLvNdnYtPB8/edit?usp=sharing)
-* 📊 [Automation Test report](https://docs.google.com/spreadsheets/d/1u3o7o4AuxK7JrZ8kAcI4VbSCxZYtziO8g08nGso_AP8/edit?usp=sharing)
-* 📊 [QA Status Report](https://docs.google.com/spreadsheets/d/1lpLyv7z-UlaPSG4q4xuqBrzCD09unfzGE6cUmTkZLQc/edit?usp=sharing)
-* 📄 [PM-User story](https://docs.google.com/spreadsheets/d/1sjgoekw_lbKJ7i8Cr2KUbIOVDszoEBCwy_eJ4sZ-UBc/edit?usp=sharing)
 
+## Certifications
+
+`ISTQB` · `CSM` · `PRINCE2` · `PMP` · `CAT` · `CSTM`
 
 ---
-### 📖 Some of My Article
-* ✍️ [The Role of QA in an Agile Scrum Team: Navigating the Product Life Cycle](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
-* ✍️ [Understanding Shift-Left Testing: A Comprehensive Guide](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-* ✍️ [Effective Mobile Testing Strategies for QA: Balancing Manual & Automation Approaches](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
-* ✍️ [AI-Driven Testing: Revolutionising Software Testing with Automation and Efficiency](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
-* ✍️ [Breaking Silos in Agile Teams: Fostering Collaboration and Alignment](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
-* ✍️ [Navigating Testing Dilemmas My Journey in Prioritizing Features Amid Tight Deadlines](https://editor.wix.com/html/editor/web/renderer/edit/32d68b58-0c8b-4f71-98ec-9b3b89bef670?metaSiteId=1c0fbe88-99b5-492d-9935-9a04204a2c96)
+
+## Writing & Knowledge Sharing
+
+I write about Quality Engineering, test automation and AI-driven testing.
+
+- [The Role of QA in an Agile Scrum Team](https://medium.com/@qapournima/the-role-of-qa-in-an-agile-scrum-team-navigating-the-product-life-cycle-02fdffd3c4f1)
+- [Understanding Shift-Left Testing](https://medium.com/@qapournima/understanding-shift-left-testing-a-comprehensive-guide-92a62360edb1)
+- [AI-Driven Testing](https://medium.com/@qapournima/ai-driven-testing-revolutionizing-software-testing-with-automation-and-efficiency-4b5308362560)
+- [Breaking Silos in Agile Teams](https://medium.com/@qapournima/breaking-silos-in-agile-teams-fostering-collaboration-and-alignment-863f5aea3f2c)
+
+**Book:** [The Last Line of Defense — By QA](https://simplebooklet.com/thelastlineofdefensebyqa#page=1)
 
 ---
-### 📖 My Books
-* ✍️ [The Last Line of Defense - By Pournima Tele](https://simplebooklet.com/thelastlineofdefensebyqa#page=1)
 
+## Currently Exploring
 
-  
+`AI Agents` · `LLM Engineering` · `Prompt Engineering` · `AI / LLM Testing` · `Python` · `Backend Development` · `Cloud & DevOps` · `Observability` · `Engineering Productivity`
+
 ---
-### 📬 **Let's Connect!**
-🔗 [LinkedIn](www.linkedin.com/in/pournimatele)  
 
+## Let's Connect
 
---- 
+<p align="center">
+  <a href="https://www.linkedin.com/in/pournimatele"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://pournimacsm.wixsite.com/qapournima"><img src="https://img.shields.io/badge/Website-111111?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
+</p>
 
-<p align="center"> <i> <em> 💫"Quality in software testing isn’t a coincidence—it's the outcome of smart automation, rigorous validation, and relentless improvement."💫 </i></em></p>
-
-
-
+<p align="center"><strong>Building with AI. Testing with intelligence. Engineering for quality.</strong></p>
