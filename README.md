@@ -12,7 +12,7 @@ AI-Driven Development · QA Automation · Prompt Engineering
 
 <a href="https://www.linkedin.com/in/pournimatele/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://github.com/QAPournima/Portfolio"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=flat-square&logo=github&logoColor=white" alt="Portfolio"/></a>
+<a href="https://pournimacsm.wixsite.com/qapournima"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=flat-square" alt="Portfolio"/></a>
 <a href="https://qapournima.github.io/QAPournima/work-history.html"><img src="https://img.shields.io/badge/Work_History-0F766E?style=flat-square" alt="Work History"/></a>
 <a href="mailto:pournima.csm@gmail.com"><img src="https://img.shields.io/badge/Email-2563EB?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 
@@ -177,7 +177,7 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 
 [LinkedIn](https://www.linkedin.com/in/pournimatele/) ·
 [GitHub](https://github.com/QAPournima) ·
-[Portfolio](https://github.com/QAPournima/Portfolio) ·
+[Portfolio](https://pournimacsm.wixsite.com/qapournima) ·
 [Website](https://pournimacsm.wixsite.com/qapournima)
 
 Prompt · Build · Test · Improve · Repeat
