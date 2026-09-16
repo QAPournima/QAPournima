@@ -28,9 +28,9 @@
     .banner {
       display: block;
       width: 100%;
-      height: 220px;
+      height: 250px;
       object-fit: cover;
-      object-position: center;
+      object-position: top;
     }
     .wrap { padding: 24px 22px 48px; background: var(--bg); }
     .back {
@@ -127,7 +127,7 @@
       color: var(--muted);
     }
     @media (max-width: 720px) {
-      .banner { height: 140px; }
+      .banner { height: 150px; object-position: top; }
       .wrap { padding: 16px 14px 32px; }
       h1 { font-size: 22px; }
       .shelf-unit { padding: 20px 14px 0; }
