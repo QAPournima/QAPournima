@@ -34,12 +34,33 @@
       overflow-x: hidden;
     }
     .mobile-hero { display: none; }
+    .banner-wrap {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #081536;
+    }
+    .banner-bg {
+      position: absolute;
+      inset: -16px;
+      width: calc(100% + 32px);
+      height: calc(100% + 32px);
+      object-fit: cover;
+      filter: blur(22px) saturate(1.15);
+      pointer-events: none;
+      user-select: none;
+    }
     .banner {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      object-position: center;
+      position: relative;
+      z-index: 1;
       display: block;
+      height: 250px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
     }
     .shell {
       display: grid;
@@ -285,7 +306,7 @@
       .snapshot, .domains, .right-top { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 720px) {
-      .banner { display: none; }
+      .banner-wrap, .banner, .banner-bg { display: none; }
       .mobile-hero {
         display: block;
         background: linear-gradient(120deg, #071433 0%, #1e1b7a 45%, #6d28d9 100%);
@@ -320,7 +341,10 @@
 </head>
 <body>
   <div class="page" id="dashboard">
-    <img class="banner" src="./profile-assets/banner.png?v=2" alt="Pournima Tele banner" />
+    <div class="banner-wrap">
+      <img class="banner-bg" src="./profile-assets/banner.png?v=3" alt="" aria-hidden="true" />
+      <img class="banner" src="./profile-assets/banner.png?v=3" alt="Pournima Tele banner" />
+    </div>
     <div class="mobile-hero">
       <p class="eyebrow">Senior Software Engineer</p>
       <h1>Pournima Tele</h1>
