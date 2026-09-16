@@ -165,6 +165,22 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
+    .role-id {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .role-id .logo {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      border: 1px solid #e8eef7;
+      padding: 5px;
+      flex: none;
+    }
     .projects {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -410,8 +426,13 @@
         <section class="card role-card">
           <h2 class="h-navy">💼 Current Role</h2>
           <span class="now">Current</span>
-          <h3>QA Team Lead</h3>
-          <p class="co">Aircall · Paris / London</p>
+          <div class="role-id">
+            <img class="logo" src="./profile-assets/logos/aircall.png" alt="Aircall logo" />
+            <div>
+              <h3>QA Team Lead</h3>
+              <p class="co">Aircall · Paris / London</p>
+            </div>
+          </div>
           <p class="meta">Nov 2020 – Present · Cloud calling</p>
           <p>Lead QA for the Mobile team — test strategy, automation, hiring and delivery. From March 2025, expanded into AI feature QA for Voice Agent and Messaging Agent, including LLM, conversational and guardrail testing.</p>
           <a class="view" href="./work-history.html">View full work history →</a>
