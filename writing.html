@@ -121,9 +121,56 @@
       h1 { font-size: 22px; }
       .grid { grid-template-columns: 1fr; }
     }
+
+    html { scroll-behavior: smooth; }
+    .site-foot {
+      position: relative;
+      z-index: 20;
+      background: #f3f4f6;
+      color: #6b7280;
+      padding: 40px 28px 28px;
+      margin-top: 8px;
+    }
+    .to-top {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -70%);
+      width: 78px;
+      height: 39px;
+      border-radius: 78px 78px 0 0;
+      background: #f3f4f6;
+      color: #9ca3af;
+      display: grid;
+      place-items: end center;
+      padding-bottom: 8px;
+      text-decoration: none;
+    }
+    .to-top:hover { color: #4b5563; }
+    .foot-inner {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+    }
+    .site-foot p { margin: 0; font-size: 13px; }
+    .site-foot nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    .site-foot nav a {
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .site-foot nav a:hover { color: #111827; }
+    @media (max-width: 720px) {
+      .foot-inner { justify-content: center; text-align: center; }
+      .site-foot nav { justify-content: center; }
+    }
   </style>
 </head>
-<body>
+<body id="top">
   <div class="page">
     <img class="banner" src="./profile-assets/banner.png?v=5" alt="Pournima Tele banner" />
     <div class="wrap">
@@ -215,5 +262,19 @@
         );
       });
   </script>
+  <footer class="site-foot">
+    <a class="to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <div class="foot-inner">
+      <p>© 2026 Pournima Tele</p>
+      <nav aria-label="Footer">
+        <a href="./index.html">Home</a>
+        <a href="./work-history.html">Work</a>
+        <a href="./writing.html">Writing</a>
+        <a href="./books.html">Books</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="mailto:pournima.csm@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
