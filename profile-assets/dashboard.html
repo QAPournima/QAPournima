@@ -111,11 +111,12 @@
       border-top: 1px solid var(--line);
       font-size: 12px;
       color: #334155;
+      line-height: 1.55;
     }
-    .loc small { color: var(--muted); display: block; margin-top: 4px; }
+    .loc small { color: var(--muted); font-size: inherit; }
     .contact {
       display: flex;
-      gap: 6px;
+      gap: 8px;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -126,22 +127,24 @@
       align-items: center;
       gap: 5px;
       background: #fff;
-      border: 1px solid #e6edf7;
+      border: 2px solid #1e3a8a;
       border-radius: 999px;
-      padding: 5px 9px;
-      font-size: 10px;
-      font-weight: 600;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 800;
       line-height: 1;
-      color: #334155;
+      color: #1e3a8a;
       text-decoration: none;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
     }
     .chip svg {
-      width: 12px;
-      height: 12px;
+      width: 14px;
+      height: 14px;
       flex: none;
     }
-    .chip-linkedin { background: #0a66c2; border-color: #0a66c2; color: #fff; }
-    .chip-github { background: #24292f; border-color: #24292f; color: #fff; }
+    .chip:hover { filter: brightness(1.08); }
+    .chip-linkedin { background: #0a66c2; border-color: #084e94; color: #fff; }
+    .chip-github { background: #111827; border-color: #030712; color: #fff; }
     .chip-portfolio { background: #6d28d9; border-color: #6d28d9; color: #fff; }
     .chip-email { background: #ea4335; border-color: #ea4335; color: #fff; }
     .chip-work { background: #0f766e; border-color: #0f766e; color: #fff; }
@@ -311,13 +314,21 @@
       color: #4338ca;
     }
     .view {
-      display: block;
-      margin-top: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #1e3a8a;
+      color: #fff;
       font-size: 12px;
-      font-weight: 700;
-      color: #2563eb;
+      font-weight: 800;
       text-decoration: none;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.28);
     }
+    .view:hover { background: #1d4ed8; color: #fff; }
+    .project .view { width: 100%; }
     .discuss {
       display: block;
       margin-top: 2px;
@@ -437,10 +448,12 @@
       color: #fff;
       text-decoration: none;
       border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 11px;
-      font-weight: 700;
+      padding: 9px 14px;
+      font-size: 12px;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
     }
+    .btn:hover { filter: brightness(1.08); }
     .footer {
       text-align: center;
       color: #7c3aed;
@@ -532,7 +545,7 @@
             <span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">Datadog</span><span class="pill">Postman</span>
             <span class="pill">MongoDB</span><span class="pill">Zephyr</span>
           </div></div>
-          <div class="loc">📍 Available for<br/><b>Milton Keynes, UK</b><small>Open to relocate (UK / France)</small></div>
+          <div class="loc">📍 Available for<br/><b>Milton Keynes, UK</b> | <small>Open to relocate (UK / France)</small></div>
         </section>
       </aside>
 
@@ -564,11 +577,13 @@
               <h3>Senior Software Engineer – QA Automation AI | Messaging</h3>
               <p class="when">Jun 2026 – Present · 3 mos</p>
               <p class="where">Remote · UK</p>
+              <p class="summary">Building AI-driven Messaging tests and contributing to Messaging development with an AI-first workflow.</p>
             </div>
             <div class="li-role">
               <h3>Engineering Team Lead - QA Automation</h3>
               <p class="when">Oct 2021 – Jun 2026 · 4 yrs 8 mos</p>
               <p class="where">Remote · UK / France</p>
+              <p class="summary">Led QA for Mobile and Messaging, including Aircall Workspace on Mobile — a full redesign under tight release cycles.</p>
             </div>
             <div class="li-role">
               <h3>Senior Software Quality Assurance Engineer</h3>
@@ -668,8 +683,10 @@
           <div class="snapshot">
             <div class="mini">
               <div class="stat"><span>📦 Total repositories</span><b>45</b></div>
-              <div class="stat"><span>⭐ Followers</span><b>2</b></div>
               <div class="stat"><span>📝 Public repos</span><b>15</b></div>
+              <div class="stat"><span>📅 Quality engineering</span><b>13+ yrs</b></div>
+              <div class="stat"><span>🏢 Aircall</span><b>5 yrs 10 mos</b></div>
+              <div class="stat"><span>👥 QA leadership</span><b>4 yrs 8 mos</b></div>
             </div>
             <div class="mini">
               <div class="lang"><span>Python</span><span>35.8%</span></div><div class="bar"><span style="width:72%;background:#3b82f6"></span></div>
