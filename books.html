@@ -110,16 +110,34 @@
       width: 138px;
       height: 200px;
       border: 2px dashed rgba(255, 255, 255, 0.28);
-      border-radius: 8px;
+      border-radius: 2px 8px 8px 2px;
       color: #e7d5c0;
-      font-size: 12px;
-      font-weight: 600;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 8px;
       text-align: center;
-      padding: 12px;
-      margin-bottom: 34px;
+      padding: 14px 10px;
+      background: rgba(15, 23, 42, 0.35);
+    }
+    .soon .now {
+      margin: 0;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fde68a;
+    }
+    .soon strong {
+      font-size: 13px;
+      line-height: 1.25;
+      color: #f8fafc;
+    }
+    .soon span {
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 600;
     }
     .note {
       margin: 16px 4px 0;
@@ -211,8 +229,15 @@
         const shelf = document.getElementById("shelf");
         (data.books || []).forEach(function (book) { shelf.appendChild(card(book)); });
         const soon = document.createElement("div");
-        soon.className = "soon";
-        soon.textContent = "Next book coming soon";
+        soon.className = "book-card writing-now";
+        soon.setAttribute("aria-label", "Now writing: The Evolved QA");
+        soon.innerHTML =
+          '<div class="soon">' +
+          '<p class="now">Now writing</p>' +
+          "<strong>The Evolved QA</strong>" +
+          "<span>How AI is Rewriting the Rules of Testing ✍️</span>" +
+          "</div>" +
+          "<div class=\"meta\"><h2>The Evolved QA</h2><p>Now writing · Pournima Tele</p></div>";
         shelf.appendChild(soon);
       });
   </script>
