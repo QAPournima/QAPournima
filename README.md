@@ -84,8 +84,8 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 <!-- FEATURED-AUTO:START -->
 ### More GitHub Projects
 
-- [qa dev](https://github.com/QAPournima/qa-dev) — QA x Dev split profile for Pournima Tele · `CSS`
 - [ai quality engineering](https://github.com/QAPournima/ai-quality-engineering) — Public senior engineering portfolio: Quality Engineering × AI Engineering · `HTML`
+- [qa dev](https://github.com/QAPournima/qa-dev) — QA x Dev split profile for Pournima Tele · `CSS`
 - [OpenAI Test Case Generator](https://github.com/QAPournima/OpenAI_Test_Case_Generator) — This project is a Java-based automation tool that integrates with Jira and OpenAI to ge... · `Java`
 - [Zap RiskAnalysis AI ML](https://github.com/QAPournima/Zap-RiskAnalysis-AI-ML) — Risk Analysis Dashboard using AI and ML · `HTML`
 - [ML Predicting Bugs](https://github.com/QAPournima/ML-Predicting-Bugs) — Predicting High-Risk Bugs with Machine Learning · `HTML`
