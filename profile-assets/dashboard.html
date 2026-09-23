@@ -246,6 +246,38 @@
       font-size: 11px;
       color: var(--muted);
     }
+    .start-lede { margin: 0 0 12px; }
+    .start-steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .start-step {
+      background: #f8fbff;
+      border: 1px solid #eaf0f8;
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .start-step .when {
+      margin: 0 0 4px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1e3a8a;
+    }
+    .start-step h3 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: var(--title);
+    }
+    .start-step ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .start-step li { margin: 4px 0; }
     .now {
       display: inline-block;
       background: #dcfce7;
@@ -532,7 +564,7 @@
       .mobile-hero p { margin: 0 0 8px; font-size: 14px; line-height: 1.45; color: #e5e7eb; }
       .mobile-hero .cycle { margin: 12px 0 0; font-weight: 700; color: #fff; }
       .shell { grid-template-columns: 1fr; gap: 12px; padding: 12px; }
-      .projects, .caps, .snapshot, .domains, .right-top { grid-template-columns: 1fr; }
+      .projects, .caps, .snapshot, .domains, .right-top, .start-steps { grid-template-columns: 1fr; }
       .project img { height: 140px; }
       .project p { min-height: 0; }
       .contact .chip { width: auto; justify-content: center; }
@@ -632,6 +664,40 @@
             </div>
           </div>
           <a class="view" href="../work-history.html#aircall">Read more →</a>
+        </section>
+        <section class="card start-card">
+          <h2 class="h-teal">How I start</h2>
+          <p class="start-lede">I wouldn’t change the QA process in my first week as a new QA Lead or engineer — even if I could already see things I wanted to fix. A new lead arrives with experience, ideas and best practices. What they don’t have yet is context.</p>
+          <div class="start-steps">
+            <article class="start-step">
+              <p class="when">First week</p>
+              <h3>Observe</h3>
+              <ul>
+                <li>Meet the team and watch how they actually work.</li>
+                <li>Learn the product and release flow.</li>
+                <li>See how QA, Product and Engineering collaborate.</li>
+                <li>Listen before suggesting changes.</li>
+              </ul>
+            </article>
+            <article class="start-step">
+              <p class="when">First month</p>
+              <h3>Investigate</h3>
+              <ul>
+                <li>Look at escaped defects, regression, release issues, environments, documentation, automation and workload.</li>
+                <li>Find patterns instead of isolated problems.</li>
+              </ul>
+            </article>
+            <article class="start-step">
+              <p class="when">First 90 days</p>
+              <h3>Improve</h3>
+              <ul>
+                <li>Prioritize the few changes that actually matter.</li>
+                <li>Define ownership and expectations, then fix bottlenecks.</li>
+                <li>Introduce useful metrics.</li>
+                <li>Build a roadmap with the team, not for the team.</li>
+              </ul>
+            </article>
+          </div>
         </section>
         <section>
           <h2 class="h-purple">✨ Featured AI/Other Projects</h2>
