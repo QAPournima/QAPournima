@@ -183,8 +183,11 @@
     }
 
     function pageCount() {
-      if (mode === "pdf") return pdfDoc.numPages;
+      if (mode === "pdf") return 1 + pdfDoc.numPages;
       return pages.length;
+    }
+    function pdfPageNumber(virtualIndex) {
+      return virtualIndex; // 0 is the designed cover; 1+ maps to PDF pages
     }
     function step() { return twoUp() ? 2 : 1; }
 
@@ -234,8 +237,17 @@
       const leftN = index + 1;
       const rightN = index + 2;
       if (mode === "pdf") {
-        spread.appendChild(await pdfLeaf(leftN));
-        if (twoUp()) spread.appendChild(await pdfLeaf(rightN <= pageCount() ? rightN : 0));
+        async function leafAt(virtualIndex) {
+          if (virtualIndex < 0 || virtualIndex >= pageCount()) {
+            const blank = document.createElement("article");
+            blank.className = "leaf blank";
+            return blank;
+          }
+          if (virtualIndex === 0) return coverLeaf();
+          return pdfLeaf(pdfPageNumber(virtualIndex));
+        }
+        spread.appendChild(await leafAt(index));
+        if (twoUp()) spread.appendChild(await leafAt(index + 1));
       } else {
         const left = pages[index];
         const right = pages[index + 1];
@@ -270,13 +282,14 @@
         book = (data.books || []).find(function (b) { return b.id === id; }) || data.books[0];
         document.title = book.title + " | Pournima Tele";
         document.getElementById("title").textContent = book.title + " — " + book.subtitle;
-        const pdfRes = book.pdfReady
-          ? await fetch(root + book.pdf, { method: "HEAD" }).catch(function () { return { ok: false }; })
-          : { ok: false };
-        if (pdfRes.ok && window.pdfjsLib) {
-          mode = "pdf";
-          pdfDoc = await pdfjsLib.getDocument(root + book.pdf).promise;
-          return render();
+        if (book.pdfReady && window.pdfjsLib) {
+          try {
+            mode = "pdf";
+            pdfDoc = await pdfjsLib.getDocument(root + book.pdf).promise;
+            return render();
+          } catch (err) {
+            mode = "pages";
+          }
         }
         const pageRes = await fetch(root + book.pages);
         pages = (await pageRes.json()).pages || [];
