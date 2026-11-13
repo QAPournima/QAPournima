@@ -372,14 +372,14 @@
     }
     .view:hover { background: #1d4ed8; color: #fff; }
     .project .view { width: 100%; margin-top: auto; }
-    .project:last-child {
+    .project:last-child:nth-child(3n + 1) {
       grid-column: 1 / -1;
       display: grid;
       grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
       align-items: stretch;
     }
-    .project:last-child .project-body { min-height: 0; }
-    .project:last-child img {
+    .project:last-child:nth-child(3n + 1) .project-body { min-height: 0; }
+    .project:last-child:nth-child(3n + 1) img {
       height: 100%;
       min-height: 140px;
     }
@@ -558,6 +558,16 @@
     @media (max-width: 1100px) {
       .shell { grid-template-columns: 1fr; }
       .projects { grid-template-columns: 1fr 1fr; }
+      .project:last-child:nth-child(3n + 1) {
+        grid-column: auto;
+        display: flex;
+      }
+      .project:last-child:nth-child(2n + 1) {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+        align-items: stretch;
+      }
       .caps { grid-template-columns: 1fr 1fr; }
       .snapshot, .domains, .right-top, .start-steps { grid-template-columns: 1fr 1fr; }
     }
@@ -588,8 +598,13 @@
       .shell { grid-template-columns: 1fr; gap: 12px; padding: 12px; }
       .projects, .caps, .snapshot, .domains, .right-top, .start-steps { grid-template-columns: 1fr; }
       .project img { height: 140px; }
-      .project:last-child { grid-template-columns: 1fr; }
-      .project:last-child img { height: 140px; min-height: 0; }
+      .project:last-child:nth-child(3n + 1),
+      .project:last-child:nth-child(2n + 1) {
+        grid-column: auto;
+        display: flex;
+      }
+      .project:last-child:nth-child(3n + 1) img,
+      .project:last-child:nth-child(2n + 1) img { height: 140px; min-height: 0; }
       .contact .chip { width: auto; justify-content: center; }
       h2 { font-size: 18px; }
       p, .about-list { font-size: 14px; }
@@ -672,7 +687,7 @@
               <h3>Senior Software Engineer – QA Automation AI | Messaging</h3>
               <p class="when">Jun 2026 – Present · 3 mos</p>
               <p class="where">Remote · UK</p>
-              <p class="summary">Building AI-driven Messaging tests and contributing to Messaging development with an AI-first workflow.</p>
+              <p class="summary">Building QualityHub for Messaging — on-demand staging tests from Slack, plus AI validate for a ticket or MR — and contributing to Messaging development with an AI-first workflow.</p>
             </div>
             <div class="li-role">
               <h3>Engineering Team Lead - QA Automation</h3>
@@ -725,6 +740,24 @@
         <section>
           <h2 class="h-purple">✨ Featured AI/Other Projects</h2>
           <div class="projects">
+            <article class="project">
+              <img src="./profile-assets/qualityhub-slack.svg" alt="QualityHub on-demand tests from Slack" />
+              <div class="project-body">
+                <h3>QualityHub — On-demand staging tests <span class="badge">Aircall</span></h3>
+                <p>Anyone on Messaging can start a staging canary from Slack and follow it to a shareable report: pick tests, queue, GitLab CI, live progress, Cancel and duplicate handling. Live on main.</p>
+                <div class="tags"><span class="tag">Slack</span><span class="tag">GitLab CI</span><span class="tag">Playwright</span><span class="tag">Python</span><span class="tag">Canary</span></div>
+                <a class="view" href="./qualityhub.html">Read the write-up →</a>
+              </div>
+            </article>
+            <article class="project">
+              <img src="./profile-assets/qualityhub-ai.svg" alt="QualityHub AI validate for a ticket or MR" />
+              <div class="project-body">
+                <h3>QualityHub AI Validate <span class="badge">Aircall</span></h3>
+                <p>From a ticket or MR, QualityHub posts an AI test plan and runs matching catalog tests. The full flow — write tests, run, browser-agent take-over, verdict — is built and trialled locally, not yet on main.</p>
+                <div class="tags"><span class="tag">Jira</span><span class="tag">LLMs</span><span class="tag">Playwright</span><span class="tag">Python</span><span class="tag">AI QA</span></div>
+                <a class="view" href="./qualityhub.html">Read the write-up →</a>
+              </div>
+            </article>
             <article class="project">
               <img class="shot" src="./profile-assets/pado.png" alt="PAdo AI-powered quality and productivity assistant" />
               <div class="project-body">

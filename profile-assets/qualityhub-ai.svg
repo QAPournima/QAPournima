@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="QualityHub AI validate">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="50%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="200" fill="url(#bg2)"/>
+  <circle cx="108" cy="100" r="46" fill="#fff" opacity="0.12"/>
+  <circle cx="108" cy="100" r="28" fill="#f5d0fe"/>
+  <text x="186" y="78" fill="#faf5ff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">QualityHub AI Validate</text>
+  <text x="186" y="108" fill="#f3e8ff" font-family="Inter, Arial, sans-serif" font-size="14">Ticket / MR ’ plan ’ tests ’ verdict</text>
+  <text x="186" y="138" fill="#e9d5ff" font-family="Inter, Arial, sans-serif" font-size="13">Plan live · full AI flow trialled locally</text>
+</svg>

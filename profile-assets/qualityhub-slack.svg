@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="QualityHub Slack on-demand tests">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="200" fill="url(#bg)"/>
+  <rect x="28" y="28" width="180" height="144" rx="16" fill="#fff" opacity="0.12"/>
+  <rect x="48" y="48" width="140" height="14" rx="7" fill="#7dd3fc"/>
+  <rect x="48" y="76" width="108" height="10" rx="5" fill="#fff" opacity="0.55"/>
+  <rect x="48" y="96" width="124" height="10" rx="5" fill="#fff" opacity="0.35"/>
+  <rect x="48" y="128" width="72" height="22" rx="11" fill="#38bdf8"/>
+  <text x="236" y="78" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">QualityHub</text>
+  <text x="236" y="108" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="14">Slack ’ queue ’ GitLab CI ’ report</text>
+  <text x="236" y="138" fill="#7dd3fc" font-family="Inter, Arial, sans-serif" font-size="13">Live on Messaging staging</text>
+</svg>
