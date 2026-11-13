@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="CDO Agent">
+  <rect width="640" height="200" fill="#0f172a"/>
+  <rect x="0" y="0" width="640" height="200" fill="#1d4ed8" opacity="0.35"/>
+  <text x="36" y="88" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">CDO Agent</text>
+  <text x="36" y="122" fill="#bfdbfe" font-family="Inter, Arial, sans-serif" font-size="15">AI-driven investigation and QA validation</text>
+</svg>
