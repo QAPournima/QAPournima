@@ -22,9 +22,9 @@ AI-Driven Development · QA Automation · Prompt Engineering
 
 ### About Me
 
-Hands-on Senior Software Engineer with a Quality Engineering background. At Aircall I led QA teams as QA Team Lead, then moved back into a hands-on IC role as Senior Software Engineer — QA Automation (Messaging) and Senior Software Engineer, AI-driven development.
+Hands-on Senior Software Engineer with a Quality Engineering background. At Aircall I lead QA as Engineering Team Lead - QA Automation, and I am also a hands-on Senior Software Engineer - QA Automation.
 
-**Current role:** [Aircall](https://www.linkedin.com/company/aircall) (Permanent · Nov 2020 – Present · 5 yrs 10 mos) — Senior Software Engineer, QA Automation AI | Messaging (Jun 2026 – Present), Engineering Team Lead, QA Automation (Oct 2021 – Jun 2026) and Senior Software Quality Assurance Engineer (Nov 2020 – Present, Mobile team). Full work history: [qapournima.github.io/QAPournima/work-history.html](https://qapournima.github.io/QAPournima/work-history.html).
+**Current role:** [Aircall](https://www.linkedin.com/company/aircall) (Permanent · Nov 2020 – Present · 6 yrs 1 mo) — Senior Software Engineer - QA Automation (Jun 2025 – Present), Engineering Team Lead - QA Automation (Oct 2021 – Present) and Senior Software Quality Assurance Engineer (Nov 2020 – Present). Full work history: [qapournima.github.io/QAPournima/work-history.html](https://qapournima.github.io/QAPournima/work-history.html).
 
 I use AI coding agents such as Claude, Cursor and **OpenCode (LLMGateway)** as collaborators — then apply QA thinking to challenge, test and refine what they produce.
 
