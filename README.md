@@ -84,6 +84,7 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 <!-- FEATURED-AUTO:START -->
 ### More GitHub Projects
 
+- [qualityhub](https://github.com/QAPournima/qualityhub) — QualityHub | AI-Powered Quality Engineering & Agentic Testing Platform · `HTML`
 - [OpenAI Test Case Generator](https://github.com/QAPournima/OpenAI_Test_Case_Generator) — This project is a Java-based automation tool that integrates with Jira and OpenAI to ge... · `Java`
 - [Zap RiskAnalysis AI ML](https://github.com/QAPournima/Zap-RiskAnalysis-AI-ML) — Risk Analysis Dashboard using AI and ML · `HTML`
 - [ML Predicting Bugs](https://github.com/QAPournima/ML-Predicting-Bugs) — Predicting High-Risk Bugs with Machine Learning · `HTML`
