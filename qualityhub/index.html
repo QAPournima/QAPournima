@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QualityHub | AI-Powered Quality Engineering &amp; Agentic QA Validation Platform</title>
+  <meta name="description" content="AI-powered quality engineering platform connecting Slack, Jira, GitHub, Playwright, native mobile and AI agents for planning, execution, investigation and reporting." />
+  <link rel="canonical" href="https://qapournima.github.io/QAPournima/qualityhub/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css?v=cdo2" />
+</head>
+<body id="top">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="./index.html" aria-label="QualityHub">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#0B1F33"/>
+          <circle cx="32" cy="32" r="16" fill="none" stroke="#ffffff" stroke-width="5"/>
+          <path d="M22.5 33.5 29 40.2 42.5 25" fill="none" stroke="#2EE6A6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        QualityHub
+      </a>
+      <nav class="nav-links">
+        <a href="#built">System</a>
+        <a href="#problem">Problem</a>
+        <a href="#platform">Platform</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#cdo">CDO</a>
+        <a href="#ai">AI</a>
+        <a href="#status">Status</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">First FDE project</p>
+        <h1>AI-Powered Quality Engineering &amp; Agentic QA Validation Platform</h1>
+        <p class="lede">QualityHub and CDO are one agentic platform. A Slack message starts a QualityHub run and ends in a report. CDO stays on the ticket, saves the scenario under that application, and keeps what the run taught it.</p>
+        <div class="states">
+          <span class="pill live">Live</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#status">What’s live</a>
+          <a class="btn btn-ghost" href="../index.html">Back to CV</a>
+        </div>
+      </div>
+      <aside class="report-preview" aria-label="Sample of the QualityHub report">
+        <div class="rp-top">
+          <span class="rp-brand">QualityHub test report · QH-1006</span>
+          <span class="rp-fail">Failed</span>
+        </div>
+        <h2>Storefront</h2>
+        <p class="rp-meta">Web · Staging · 0m 31s</p>
+        <div class="rp-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="rp-tiles">
+          <div><strong>7</strong><span>Scenarios</span></div>
+          <div><strong class="good">5</strong><span>Passed</span></div>
+          <div><strong class="bad">1</strong><span>Failed</span></div>
+          <div><strong class="skip">1</strong><span>Skipped</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="built">
+      <h2>Flagship engineering project</h2>
+      <p class="sub">QualityHub and CDO are one agentic platform: two workflows, one Slack channel, one bot. Connecting the systems, designing the workflow, and shipping something engineers can run from Slack. All of this is live. Company links and tokens are left off this page.</p>
+      <ul class="built">
+        <li><span class="tag live">Live</span><strong>Slack</strong> to start a run and to receive queue, live progress and result updates in the same thread.</li>
+        <li><span class="tag live">Live</span><strong>Jira</strong> integration for understanding requirements.</li>
+        <li><span class="tag live">Live</span><strong>GitHub</strong> for source, pull requests and CI pipelines.</li>
+        <li><span class="tag live">Live</span><strong>LLM</strong> integration for reasoning and test planning.</li>
+        <li><span class="tag live">Live</span><strong>Playwright</strong> for deterministic web execution.</li>
+        <li><span class="tag live">Live</span><strong>Native mobile</strong> tests on a device connected to a laptop (USB or Wi-Fi).</li>
+        <li><span class="tag live">Live</span><strong>Browser agent</strong> for investigating failures.</li>
+        <li><span class="tag live">Live</span><strong>Budget, safety and evidence</strong> — cost caps, Failed vs Skipped rules, traces and a shareable report.</li>
+      </ul>
+    </section>
+
+    <section id="problem">
+      <h2>The problem</h2>
+      <p class="sub">Teams now build with AI, and on many of those teams the QA role is gone. The live safety net is an automation suite that covers only part of the app. Fast changes still need a check, and another team still needs a way to run that suite on a build.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Before</h3>
+          <ul>
+            <li>Development moved to AI, and the people who used to own validation left with it.</li>
+            <li>What stayed live was the existing automation suite, and it covered only part of the app.</li>
+            <li>A non-regression run meant asking the owning team to trigger it on their build, then waiting.</li>
+            <li>A team with no QA had no one to check a ticket, and no place the new check was kept for the next change.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>After</h3>
+          <ul>
+            <li>An engineer asks QualityHub to test a merge request or a ticket, or uses the Slack form to run non-regression and see that fast development left the app intact.</li>
+            <li>The same Slack form drives an automation framework the team already built. That run uses the existing suite. Any team starts it on the build, with no wait for the owners to trigger it.</li>
+            <li>CDO covers validation for a team that has no QA. The AI-driven workflow runs the check, saves the scenario it created, and QualityHub can run that saved scenario later.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="platform">
+      <h2>Not a test runner. A platform.</h2>
+      <p class="sub">QualityHub sits between how people work (Slack, Jira, pull requests) and how software is proven (Playwright for web, Appium for the mobile app on a laptop-connected device, GitHub CI, traces, reports). Humans stay in control: who can cancel, what data is missing, what is Failed versus Skipped, and when AI is allowed to spend.</p>
+      <div class="grid-3">
+        <article class="card"><h3>Accessible</h3><p>Slack form or <code>qualityhub validate</code>. No terminal. Queue, duplicates and cancel are first-class.</p></article>
+        <article class="card"><h3>Intelligent</h3><p>Planner reads the ticket and pull request, writes coverage, data limits and priorities. Models are routed per step.</p></article>
+        <article class="card"><h3>Evidence-driven</h3><p>Live progress, pass/fail/skip with reasons, videos and Playwright traces on failures. Failed means failed twice with evidence.</p></article>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <h2>Architecture and stack — QualityHub</h2>
+      <p class="sub">A live request moves through Slack and Jira, into QualityHub, then GitHub CI. From there it splits: Playwright for web, Appium for the mobile app on a laptop-connected device, and the LLM gateway for planning and investigation. Everything lands in one report, and the same Slack thread gets the queue, live progress and the final counts. Company hosts are not shown here.</p>
+      <div class="arch" aria-label="Live architecture flow from Slack and Jira through QualityHub, GitHub CI, Playwright, native mobile and LLMs to a report">
+        <p class="arch-live"><span class="arch-dot"></span> Live data flow</p>
+        <div class="arch-board">
+          <svg class="arch-base" viewBox="0 0 1140 580" role="presentation">
+            <g class="node" data-flow="0">
+              <rect class="box cyan" x="36" y="48" width="200" height="72" rx="16"/>
+              <text class="t1" x="136" y="80">Slack</text>
+              <text class="t2" x="136" y="100">request · live updates</text>
+            </g>
+            <g class="node" data-flow="1">
+              <rect class="box blue" x="36" y="144" width="200" height="72" rx="16"/>
+              <text class="t1" x="136" y="176">Jira / PR</text>
+              <text class="t2" x="136" y="196">read only</text>
+            </g>
+            <g class="node" data-flow="2">
+              <rect class="box violet hub" x="280" y="48" width="300" height="168" rx="20"/>
+              <text class="t1 big" x="430" y="100">QualityHub</text>
+              <text class="t2" x="430" y="128">queue · cancel · plans</text>
+              <text class="t2" x="430" y="148">planner · generator · agent</text>
+              <text class="t2" x="430" y="168">verdict · budget · live page</text>
+            </g>
+            <g class="node" data-flow="3">
+              <rect class="box gold" x="640" y="48" width="200" height="72" rx="16"/>
+              <text class="t1" x="740" y="80">GitHub</text>
+              <text class="t2" x="740" y="100">repo · PRs · any Git host</text>
+            </g>
+            <g class="node" data-flow="4">
+              <rect class="box gold" x="900" y="48" width="200" height="72" rx="16"/>
+              <text class="t1" x="1000" y="80">GitHub CI</text>
+              <text class="t2" x="1000" y="100">plan + run pipelines</text>
+            </g>
+            <g class="node" data-flow="5">
+              <rect class="box cyan" x="240" y="318" width="230" height="88" rx="16"/>
+              <text class="t1" x="355" y="356">Playwright</text>
+              <text class="t2" x="355" y="378">web · canary · AI tests</text>
+            </g>
+            <g class="node" data-flow="6">
+              <rect class="box blue" x="530" y="318" width="250" height="88" rx="16"/>
+              <text class="t1" x="655" y="356">Native mobile</text>
+              <text class="t2" x="655" y="378">Appium · device ↔ laptop</text>
+            </g>
+            <g class="node" data-flow="7">
+              <rect class="box violet" x="900" y="318" width="200" height="88" rx="16"/>
+              <text class="t1" x="1000" y="356">LLM Gateway</text>
+              <text class="t2" x="1000" y="378">model per step</text>
+            </g>
+            <g class="node" data-flow="8">
+              <rect class="box gold" x="240" y="470" width="860" height="80" rx="16"/>
+              <text class="t1" x="670" y="506">Live page, then report</text>
+              <text class="t2" x="670" y="528">/r/QH-id live · then Slack gets the counts</text>
+            </g>
+          </svg>
+          <svg class="arch-overlay" viewBox="0 0 1140 580" role="presentation">
+            <defs>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g class="wire-solid">
+              <path d="M236 84 H268"/>
+              <path d="M236 180 H268"/>
+              <path d="M580 84 H628"/>
+              <path d="M840 84 H888"/>
+              <path d="M1000 120 V266 H355 V306"/>
+              <path d="M1000 120 V266 H655 V306"/>
+              <path d="M1000 120 V306"/>
+              <path d="M355 406 V458"/>
+              <path d="M655 406 V458"/>
+              <path d="M1000 406 V458"/>
+              <path class="return" d="M248 510 H18 V84 H28"/>
+            </g>
+            <g class="wire-dash">
+              <path id="p-slack" d="M236 84 H268"/>
+              <path id="p-jira" d="M236 180 H268"/>
+              <path id="p-hub-gh" d="M580 84 H628"/>
+              <path id="p-gh-ci" d="M840 84 H888"/>
+              <path id="p-ci-web" d="M1000 120 V266 H355 V306"/>
+              <path id="p-ci-mob" d="M1000 120 V266 H655 V306"/>
+              <path id="p-ci-llm" d="M1000 120 V306"/>
+              <path id="p-web-rep" d="M355 406 V458"/>
+              <path id="p-mob-rep" d="M655 406 V458"/>
+              <path id="p-llm-rep" d="M1000 406 V458"/>
+              <path id="p-rep-slack" class="return" d="M248 510 H18 V84 H28"/>
+            </g>
+            <g class="arrows" fill="#5eead4">
+              <polygon points="268,77 280,84 268,91"/>
+              <polygon points="268,173 280,180 268,187"/>
+              <polygon points="628,77 640,84 628,91"/>
+              <polygon points="888,77 900,84 888,91"/>
+              <polygon points="348,306 355,318 362,306"/>
+              <polygon points="648,306 655,318 662,306"/>
+              <polygon points="993,306 1000,318 1007,306"/>
+              <polygon points="348,458 355,470 362,458"/>
+              <polygon points="648,458 655,470 662,458"/>
+              <polygon points="993,458 1000,470 1007,458"/>
+              <polygon class="return" points="28,77 36,84 28,91"/>
+            </g>
+            <g class="packets">
+              <circle class="pkt" r="5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p-slack"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#7dd3fc" filter="url(#glow)"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#p-jira"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#c4b5fd" filter="url(#glow)"><animateMotion dur="2.1s" repeatCount="indefinite"><mpath href="#p-hub-gh"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#fbbf24" filter="url(#glow)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#p-gh-ci"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="3.4s" repeatCount="indefinite"><mpath href="#p-ci-web"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#7dd3fc" filter="url(#glow)"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#p-ci-mob"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#c4b5fd" filter="url(#glow)"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#p-ci-llm"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#p-web-rep"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#7dd3fc" filter="url(#glow)"><animateMotion dur="2.1s" repeatCount="indefinite"><mpath href="#p-mob-rep"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#c4b5fd" filter="url(#glow)"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p-llm-rep"/></animateMotion></circle>
+              <circle class="pkt return" r="5" fill="#fbbf24" filter="url(#glow)"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#p-rep-slack"/></animateMotion></circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:14px">
+        <article class="card"><h3>Interface</h3><p>Slack to start the run. The same thread gets queued, live progress and the finished counts, plus the live page <code>/r/QH-id</code> and shareable report.</p></article>
+        <article class="card"><h3>Execution</h3><p>Python service, GitHub CI, Playwright for web, Appium on a laptop-connected iOS/Android device, browser agent.</p></article>
+        <article class="card"><h3>Intelligence</h3><p>LLM Gateway. Plan, generate, agent, classify and summarise each get their own model.</p></article>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <h2>Slack to report — and back to Slack</h2>
+      <p class="sub">Two ways in. The form runs existing canary tests. Validate tests one ticket or pull request. Both share the same queue, CI job, live page and report. The Slack thread is updated as the run queues, starts and finishes. Native mobile joins the same run when a device is connected to the laptop.</p>
+      <div class="demo">
+        <div class="demo-steps" role="tablist" aria-label="Platform walkthrough">
+          <button type="button" data-step="0" aria-current="true">1. Ask in Slack</button>
+          <button type="button" data-step="1">2. Queue and CI</button>
+          <button type="button" data-step="2">3. Watch live</button>
+          <button type="button" data-step="3">4. Keep the evidence</button>
+        </div>
+        <div class="demo-view" id="demo-view">
+          <p class="label">Ad-hoc or validate</p>
+          <h3>Start from Slack</h3>
+          <p>Pick tests by keyword or feature, or post <code>qualityhub validate &lt;ticket or PR&gt;</code>. Duplicates become a Following card. Only the requester can cancel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cdo">
+      <p class="kicker">One agentic platform · separate workflow · live</p>
+      <h2>CDO, the QA assistant on the ticket</h2>
+      <p class="sub">This is already how a ticket is handled. One ticket gets one coordinator and two plain test runners. The CDO agent thinks and decides. Frontend QA and Backend QA only run checks and return a result. A pass or fail always comes from a real test. It uses the same bot in <code>#quality_hub</code> and does not open the QualityHub form. Every run is then saved under that application.</p>
+      <h2>Architecture and stack — CDO</h2>
+      <p class="sub">Nine steps on every ticket. The same suite runs at three moments — local, the staging web app, and staging after deploy. Only the target and where the evidence lands change. Blue steps wait for your reply. The merge request is a manual step: it is created only when you reply <code>ok</code> in Slack after local validation. Any other reply restarts the fix from that message. Each run is saved under that application's folder.</p>
+      <div class="arch" aria-label="CDO ticket flow from understand and propose through local, staging web app and staging checks, then saved as a scenario under the application">
+        <p class="arch-live"><span class="arch-dot"></span> Live data flow</p>
+        <div class="arch-board">
+          <svg class="arch-base" viewBox="-64 0 1204 920" role="presentation">
+            <g class="node" data-flow="0">
+              <rect class="box" x="28" y="16" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="40">1 Understand the issue</text>
+              <text class="t2" x="278" y="60">Investigated with Claude, against the real ticket</text>
+            </g>
+            <g class="node" data-flow="1">
+              <rect class="box gate" x="28" y="102" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="126">2 Propose a fix</text>
+              <text class="t2" x="278" y="146">A solution proposed against the real code</text>
+            </g>
+            <g class="node" data-flow="2">
+              <rect class="box" x="28" y="188" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="212">3 Review</text>
+              <text class="t2" x="278" y="232">Go through the suggested changes in detail</text>
+            </g>
+            <g class="node" data-flow="3">
+              <rect class="box gate" x="28" y="274" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="298">4 Go / no-go</text>
+              <text class="t2" x="278" y="318">Explicit approval before anything lands</text>
+            </g>
+            <g class="node" data-flow="4">
+              <rect class="box gate" x="28" y="360" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="384">5 Local validation</text>
+              <text class="t2" x="278" y="404">Unit tests and Playwright. Video and screenshots saved</text>
+            </g>
+            <g class="node" data-flow="5">
+              <rect class="box gate" x="28" y="446" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="470">6 MR created</text>
+              <text class="t2" x="278" y="490">Manual, after you reply ok. Evidence on the MR and Jira</text>
+            </g>
+            <g class="node" data-flow="6">
+              <rect class="box" x="28" y="532" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="556">7 Staging web app</text>
+              <text class="t2" x="278" y="576">Same suite reruns. Fresh evidence to the MR and Jira</text>
+            </g>
+            <g class="node" data-flow="7">
+              <rect class="box" x="28" y="618" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="642">8 Ready for review</text>
+              <text class="t2" x="278" y="662">Hands off to the human review process</text>
+            </g>
+            <g class="node" data-flow="8">
+              <rect class="box gate" x="28" y="704" width="500" height="62" rx="16"/>
+              <text class="t1" x="278" y="728">9 Post-merge</text>
+              <text class="t2" x="278" y="748">After deploy, the same suite runs again on staging</text>
+            </g>
+            <g class="node" data-flow="9">
+              <rect class="box runner" x="700" y="330" width="410" height="436" rx="18"/>
+              <text class="t1" x="905" y="362">QA runners</text>
+              <text class="t2" x="905" y="382">no Claude</text>
+              <rect class="box" x="720" y="400" width="370" height="64" rx="14"/>
+              <text class="t1" x="905" y="426">1 Backend QA</text>
+              <text class="t2" x="905" y="446">API, webhook, carrier checks</text>
+              <rect class="box" x="720" y="480" width="370" height="64" rx="14"/>
+              <text class="t1" x="905" y="506">2 Frontend QA</text>
+              <text class="t2" x="905" y="526">Playwright, video, screenshots</text>
+              <text class="t2" x="905" y="578">One JSON result</text>
+              <text class="t2" x="905" y="598">passed, failed or error, plus evidence</text>
+            </g>
+            <g class="node" data-flow="10">
+              <rect class="box" x="28" y="820" width="1082" height="82" rx="16"/>
+              <text class="t1" x="569" y="850">Application folder</text>
+              <text class="t2" x="569" y="872">New application, new folder. Each run saves a scenario. A failed or outdated scenario is replaced.</text>
+              <text class="t2" x="569" y="890">The learning is kept for the next CDO task on that application.</text>
+            </g>
+            <rect class="box gate" x="760" y="680" width="16" height="16" rx="4"/>
+            <text class="t2 start" x="788" y="693">needs your reply</text>
+            <text class="lab" x="860" y="798">save</text>
+            <text class="lab" x="-4" y="312">restart</text>
+            <text class="lab" x="624" y="384">local</text>
+            <text class="lab" x="624" y="556">web app</text>
+            <text class="lab" x="624" y="728">staging</text>
+          </svg>
+          <svg class="arch-overlay" viewBox="-64 0 1204 920" role="presentation">
+            <g class="wire-solid">
+              <path d="M278 78 V102"/>
+              <path d="M278 164 V188"/>
+              <path d="M278 250 V274"/>
+              <path d="M278 336 V360"/>
+              <path d="M278 422 V446"/>
+              <path class="return" d="M28 391 H-36 V219 H28"/>
+              <path d="M278 508 V532"/>
+              <path d="M278 594 V618"/>
+              <path d="M278 680 V704"/>
+              <path class="branch" d="M528 391 H700"/>
+              <path class="branch" d="M528 563 H700"/>
+              <path class="branch" d="M528 735 H700"/>
+              <path d="M905 766 V820"/>
+            </g>
+            <g class="wire-dash">
+              <path id="p-cdo-1" d="M278 78 V102"/>
+              <path id="p-cdo-2" d="M278 164 V188"/>
+              <path id="p-cdo-3" d="M278 250 V274"/>
+              <path id="p-cdo-4" d="M278 336 V360"/>
+              <path id="p-cdo-5" d="M278 422 V446"/>
+              <path id="p-cdo-restart" class="return" d="M28 391 H-36 V219 H28"/>
+              <path id="p-cdo-6" d="M278 508 V532"/>
+              <path id="p-cdo-7" d="M278 594 V618"/>
+              <path id="p-cdo-8" d="M278 680 V704"/>
+              <path id="p-cdo-local" class="branch" d="M528 391 H700"/>
+              <path id="p-cdo-web" class="branch" d="M528 563 H700"/>
+              <path id="p-cdo-staging" class="branch" d="M528 735 H700"/>
+              <path id="p-cdo-save" d="M905 766 V820"/>
+            </g>
+            <g class="arrows" fill="#5eead4">
+              <polygon points="271,90 278,102 285,90"/>
+              <polygon points="271,176 278,188 285,176"/>
+              <polygon points="271,262 278,274 285,262"/>
+              <polygon points="271,348 278,360 285,348"/>
+              <polygon points="271,434 278,446 285,434"/>
+              <polygon class="return" points="16,212 28,219 16,226"/>
+              <polygon points="271,520 278,532 285,520"/>
+              <polygon points="271,606 278,618 285,606"/>
+              <polygon points="271,692 278,704 285,692"/>
+              <polygon class="branch" points="688,384 700,391 688,398"/>
+              <polygon class="branch" points="688,556 700,563 688,570"/>
+              <polygon class="branch" points="688,728 700,735 688,742"/>
+              <polygon points="898,808 905,820 912,808"/>
+            </g>
+            <g class="packets">
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#p-cdo-1"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#p-cdo-2"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.45s" repeatCount="indefinite"><mpath href="#p-cdo-3"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.55s" repeatCount="indefinite"><mpath href="#p-cdo-4"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.4s" repeatCount="indefinite"><mpath href="#p-cdo-5"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#fbbf24" filter="url(#glow)"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#p-cdo-restart"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#p-cdo-6"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.5s" repeatCount="indefinite"><mpath href="#p-cdo-7"/></animateMotion></circle>
+              <circle class="pkt" r="4.5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.45s" repeatCount="indefinite"><mpath href="#p-cdo-8"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#60a5fa" filter="url(#glow)"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p-cdo-local"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#60a5fa" filter="url(#glow)"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#p-cdo-web"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#60a5fa" filter="url(#glow)"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#p-cdo-staging"/></animateMotion></circle>
+              <circle class="pkt" r="5" fill="#5eead4" filter="url(#glow)"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#p-cdo-save"/></animateMotion></circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="card" style="overflow:auto;margin-bottom:12px">
+        <table>
+          <thead>
+            <tr><th>Role</th><th>Job</th><th>Never does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CDO agent</td><td>Finds the ticket, sets the case type, drafts the fix and the merge request, runs the QA runners in order, keeps the status, posts only after approve. Saves the run as a scenario under that application, and replaces a scenario that failed or needs an update.</td><td>Drive the browser or call the product API itself. Merge. Change customer data.</td></tr>
+            <tr><td>Frontend QA</td><td>Runs a Playwright check against local, the staging web app, or staging. Returns pass or fail, with video and screenshots.</td><td>Decide what to test. Post anywhere.</td></tr>
+            <tr><td>Backend QA</td><td>Runs an API, webhook, or carrier check against local, sandbox, or staging. Returns pass or fail, with the request and response.</td><td>Use a browser. Decide what to test. Post anywhere.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol class="cdo-steps">
+        <li>
+          <span>1</span>
+          <h3>Before the fix</h3>
+          <p>Reads the ticket and posts a plan. <code>ok</code> writes the fix and unit tests. <code>change</code> revises the plan. <code>skip</code> stops, and the ticket stays with you. No code is written until you approve.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <h3>After the fix</h3>
+          <p>Runs the local check. The draft merge request is created only after you reply <code>ok</code> in Slack. Any other reply restarts the fix from that message. It never marks the request ready or merges it.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <h3>After deploy on staging</h3>
+          <p>When the deploy job is green, it tests the change and the flows next to it on staging. The Jira comment — status, steps, expected against actual, and evidence — is posted only after you approve. A failure asks you first.</p>
+        </li>
+      </ol>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Scenarios, per application</h3>
+          <p>Every automation run is saved as a test scenario in a folder named for that application. A new application gets a new folder, and the scenarios start there. The next CDO task on that application reads this folder first.</p>
+        </article>
+        <article class="card">
+          <h3>Auto-healing</h3>
+          <p>If a saved scenario fails, or the product has moved on, the agent updates or replaces that scenario. What the run showed is saved as knowledge, and the next task on the same application starts from it.</p>
+        </article>
+      </div>
+      <div class="grid-2" style="margin-top:12px">
+        <article class="card">
+          <h3>Case type</h3>
+          <p>Each ticket is <code>ui</code>, <code>api</code>, or <code>both</code>. That picks the main check. Backend runs first: it is faster, and a broken API makes the UI result meaningless. <code>both</code> stops on the first failure. There is no type that skips QA.</p>
+        </article>
+        <article class="card">
+          <h3>One status, one line in Slack</h3>
+          <p>Only the CDO agent writes the ticket status: assigned, running, passed, failed, or needs you. The thread gets one line, for example <code>Task status: backend local: passed; frontend local: running.</code></p>
+          <p>The agent starts a runner with one JSON request and reads one JSON result. It checks that the result belongs to this ticket, stage, and build before trusting it. A timeout is needs you, and it is not retried in the same run.</p>
+        </article>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h3>You stay in control</h3>
+        <p>At each gate the agent waits for <code>ok</code> / <code>approve</code>, <code>change</code>, <code>more details</code>, or <code>skip</code>. The word you used is stored with the date. After the local test, only <code>ok</code> creates the merge request. Any other Slack reply restarts the fix from that message. In <code>#quality_hub</code>, as a whole message:</p>
+        <ul>
+          <li><code>stop CDO</code> — CDO work waits. Tickets already in progress stay where they are. Direct asks still run.</li>
+          <li><code>resume CDO</code> — CDO starts again from where it stopped.</li>
+          <li><code>status CDO</code> — replies whether CDO is running or stopped, and which tickets are in progress.</li>
+        </ul>
+        <p>Customer data changes are human-only. Production is read-only. Runners never receive the agent’s Jira or Slack credentials. CDO runs on weekdays, 08:00 to 19:00 UK time, and each Claude step has a spend cap.</p>
+      </div>
+
+      <h2 style="margin-top:28px">One suite, three targets, one evidence trail</h2>
+      <p class="sub">The same Playwright suite and the same report. Only the target and where the evidence lands change.</p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Step 5 · Local</h3>
+          <p>Target: the local build. Runs unit tests and the Playwright suite against the change. Writes the report, video and screenshots.</p>
+        </article>
+        <article class="card">
+          <h3>Step 7 · Staging web app</h3>
+          <p>Target: the staging web app for that merge request. The same suite runs again. Fresh evidence is posted on the MR and in Jira.</p>
+        </article>
+        <article class="card">
+          <h3>Step 9 · Post-merge</h3>
+          <p>Target: real staging, once the deploy is green. The same suite runs again. Fresh evidence is posted on the MR and in Jira.</p>
+        </article>
+      </div>
+      <p class="sub" style="margin-top:12px">Step 6 creates the merge request only after you reply <code>ok</code>. Step 8 hands the draft to human review. Any other reply after local validation restarts the fix from that message.</p>
+
+      <h2>AI does the work. Humans keep the gate.</h2>
+      <p class="sub">Two flows, two answers. On a ticket, Claude investigates, proposes the fix, runs the tests and drafts the evidence. Every gate — go / no-go, creating the merge request, posting anything the team can see — waits for you. The standing suite is different: Claude may have written the scenario once, and the run itself is plain Playwright.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Per-ticket workflow</h3>
+          <p>Claude is involved throughout: investigating, proposing the fix, running the tests, drafting evidence for the MR and Jira. Go / no-go, MR creation and any team-visible post wait for an explicit reply. Nothing ships on its own.</p>
+        </article>
+        <article class="card">
+          <h3>Standing watch</h3>
+          <p>No model calls while the suite is running. Claude helped write the scenarios once. The runs are deterministic Playwright, on a GitHub CI schedule when that schedule is on.</p>
+        </article>
+      </div>
+      <div class="grid-2" style="margin-top:12px">
+        <article class="card">
+          <p class="kicker">Example</p>
+          <p>You gave the background and a first proposed fix. The agent cross-checked it against the real code and countered with a refinement. You agreed the final fix together. It ran the local suite, then drafted the MR and the Jira comment. Nothing was posted until you said go ahead.</p>
+        </article>
+        <article class="card">
+          <p class="kicker">Example</p>
+          <p>Written once with Claude. On the hourly schedule it ran as plain Playwright on GitHub CI and caught a real regression, with no model in the loop. It still runs on demand.</p>
+        </article>
+      </div>
+
+      <h2 style="margin-top:28px">A real regression, caught</h2>
+      <p class="sub">While the hourly schedule was on, every run since the afternoon before had one scenario failing. The others passed. The failing step was a click that timed out. It was flagged automatically, hour after hour, with no one watching for it directly.</p>
+
+      <h2>Eight skills</h2>
+      <p class="sub">Each one is a skill any developer on the team can invoke directly, on any ticket, in their own session.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3><code>qa-validation-in-dev</code> <span class="tag live">Web</span></h3>
+          <p>Prove a fix live — local, the staging web app, and post-merge — with recorded video and screenshots as well as the unit tests.</p>
+        </article>
+        <article class="card">
+          <h3><code>review-comment-live-verification</code> <span class="tag live">Web</span></h3>
+          <p>A reviewer asks what actually happens if a step fails. Answer with a live run against the real app.</p>
+        </article>
+        <article class="card">
+          <h3><code>ticket-regression-suite</code> <span class="tag live">Web</span></h3>
+          <p>Given a ticket, build edge-case coverage from its acceptance criteria, then promote whatever holds up into the permanent suite.</p>
+        </article>
+        <article class="card">
+          <h3><code>senior-qa-mindset</code> <span class="tag live">Web</span></h3>
+          <p>A QA thinking block before any test is written or run. Actively try to break the flow, and confirm the happy path as well.</p>
+        </article>
+        <article class="card">
+          <h3><code>backend-validation-in-dev</code> <span class="tag live">API</span></h3>
+          <p>The same discipline below the browser. Public API sends, outbound webhooks and carrier callbacks, verified against real staging.</p>
+        </article>
+        <article class="card">
+          <h3>Three web wiring skills <span class="tag live">Web</span></h3>
+          <p><code>qa-validation-in-dev-web</code>, <code>review-comment-live-verification-web</code> and <code>ticket-regression-suite-web</code> add the staging web app specifics to the generic skills.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ai">
+      <h2>AI planning, generation and agent take-over</h2>
+      <p class="sub">Validate is one flow. Catalog tests cover what already exists. AI rows cover the rest. A passing test goes to its verdict. A test that fails twice goes to the browser agent.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Plan</h3>
+          <p>Reads the Jira ticket and pull request changes. Writes feature checks, bug repro and edge cases, each with a priority. Missing data skips only that row and asks for the data. Unreachable backend cases are marked covered elsewhere, not forced through the UI.</p>
+        </article>
+        <article class="card">
+          <h3>Generate, run, take over</h3>
+          <p>Writes a Playwright scenario per AI row. 90 seconds, one retry. A broken test is handed to a browser agent. Classify product bug versus test bug. Summarise a verdict for reviewers. Remaining rows skip when the run budget is reached — never marked passed.</p>
+        </article>
+      </div>
+      <div class="card" style="margin-top:12px; overflow:auto">
+        <h3>Model routing and cost</h3>
+        <p>Each step uses the cheapest model that can do it. Any step can be switched with an environment variable, no code change. Planner trials: about $0.10–$0.16 per ticket.</p>
+        <table>
+          <thead>
+            <tr><th>Step</th><th>Default</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Plan</td><td>Sonnet 5.5</td><td>Coverage, edge cases, data limits</td></tr>
+            <tr><td>Generate tests</td><td>Sonnet 5.5</td><td>Playwright that must pass safety checks</td></tr>
+            <tr><td>Browser agent</td><td>Sonnet 5.5</td><td>Drive Chrome and judge what it sees</td></tr>
+            <tr><td>Classify failure</td><td>Haiku 4.5</td><td>Product bug or test bug</td></tr>
+            <tr><td>Summary</td><td>Opus 5.5</td><td>Verdict worded for reviewers</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:12px">Cap: $9 per validate run. When it is reached, remaining rows are Skipped: AI budget reached.</p>
+      </div>
+    </section>
+
+    <section id="status">
+      <h2>What’s live</h2>
+      <div class="grid-2">
+        <article class="card">
+          <p class="kicker">Live</p>
+          <h3>Regression from Slack</h3>
+          <ul>
+            <li>Slack form, queue, cancel, duplicate handling</li>
+            <li>Playwright web run from that form</li>
+            <li>Live progress page and the HTML report</li>
+            <li>Slack thread updates, with Report opening the finished report</li>
+            <li><code>qualityhub validate</code> for a ticket or pull request</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="kicker">Live</p>
+          <h3>Also live, links omitted here</h3>
+          <ul>
+            <li>Jira, GitHub CI, and the LLM planner</li>
+            <li>Native mobile on a laptop-connected device</li>
+            <li>Browser agent, budget, and traces</li>
+            <li>CDO saves each run as a scenario under the application, and replaces a scenario that failed or needs an update</li>
+            <li>Company hosts and tokens are not published on this page</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering decisions</h2>
+      <div class="card">
+        <ul>
+          <li>One agentic platform, two workflows — QualityHub starts a test; CDO assists on the ticket, saves the scenario under that application, and keeps what the run taught it.</li>
+          <li>One platform, two entry points — form for canary, validate for a ticket or pull request.</li>
+          <li>Failed = failed twice with evidence. Blocked twice = Skipped, with the reason. No unfinished rows.</li>
+          <li>Validate only reads pull requests. It never comments on them.</li>
+          <li>Only the person who asked can cancel, through a private button.</li>
+          <li>Traces only for failed tests. Reports behind SSO.</li>
+          <li>Humans stay in the loop: AI proposes, automation executes, people own the verdict rules and the budget.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>© 2026 Pournima Tele · QualityHub portfolio project.</p>
+    <nav>
+      <a href="../index.html">CV</a>
+      ·
+      <a href="https://github.com/QAPournima/qualityhub">GitHub</a>
+      ·
+      <a href="https://www.linkedin.com/in/pournimatele/">LinkedIn</a>
+    </nav>
+  </footer>
+  <script>
+    var copy = [
+      { label: "Ad-hoc or validate", title: "Start from Slack", body: "Pick tests by keyword or feature, or post qualityhub validate with a ticket or pull request. Duplicates become a Following card. Only the requester can cancel." },
+      { label: "Shared runner", title: "One queue, GitHub CI", body: "One run at a time. Queued requests wait. The plan job writes the plan. The run job executes web checks, native mobile on a laptop-connected device, and, in the AI flow, generated tests." },
+      { label: "Progress", title: "Live page and Slack updates", body: "The page tails the CI job log test by test. The Slack thread is posted to as it queues, starts and finishes — with a live progress link." },
+      { label: "Evidence", title: "Report, then Slack counts", body: "Request details, pass/fail/skip per area, skip reasons, videos and traces. Slack gets the finished counts and a link back to the shareable report." }
+    ];
+    var view = document.getElementById("demo-view");
+    var buttons = document.querySelectorAll("[data-step]");
+    function show(i) {
+      var item = copy[i];
+      view.innerHTML = '<p class="label">' + item.label + "</p><h3>" + item.title + "</h3><p>" + item.body + "</p>";
+      buttons.forEach(function (btn) {
+        btn.setAttribute("aria-current", btn.getAttribute("data-step") === String(i) ? "true" : "false");
+      });
+    }
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () { show(btn.getAttribute("data-step")); });
+    });
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll(".arch").forEach(function (board) {
+      var nodes = board.querySelectorAll(".arch-base .node");
+      var index = 0;
+      if (reduceMotion) {
+        board.querySelectorAll("animateMotion").forEach(function (el) { el.remove(); });
+        return;
+      }
+      if (!nodes.length) return;
+      setInterval(function () {
+        nodes.forEach(function (n) { n.classList.remove("is-live"); });
+        nodes[index % nodes.length].classList.add("is-live");
+        index += 1;
+      }, 700);
+    });
+  </script>
+</body>
+</html>
