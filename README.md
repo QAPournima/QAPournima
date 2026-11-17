@@ -33,7 +33,7 @@ I use AI coding agents such as Claude, Cursor and **OpenCode (LLMGateway)** as c
 - Web, mobile and API automation
 - Backend / frontend development, CI/CD and observability
 
-Milton Keynes, UK · Skilled Worker Visa · Open to relocate (UK / France)
+Milton Keynes, UK · Skilled Worker Visa (issued Dec 2024 · valid till Dec 2028) · Open to relocate (UK / France)
 
 ---
 
