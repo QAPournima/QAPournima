@@ -8,7 +8,7 @@
 
 AI-Driven Development · QA Automation · Prompt Engineering
 
-13+ years in Quality Engineering, Test Automation and Software Engineering.
+14+ years in Quality Engineering, Test Automation and Software Engineering.
 
 <a href="https://www.linkedin.com/in/pournimatele/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/QAPournima"><img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
@@ -84,7 +84,7 @@ Guardrails, prompt injection, hallucination detection and multi-turn dialogue.
 <!-- FEATURED-AUTO:START -->
 ### More GitHub Projects
 
-- [qualityhub](https://github.com/QAPournima/qualityhub) — QualityHub | AI-Powered Quality Engineering & Agentic Testing Platform · `HTML`
+- [qualityhub](https://github.com/QAPournima/qualityhub) — QualityHub | AI-Powered Quality Engineering & Agentic QA Validation Platform · `HTML`
 - [OpenAI Test Case Generator](https://github.com/QAPournima/OpenAI_Test_Case_Generator) — This project is a Java-based automation tool that integrates with Jira and OpenAI to ge... · `Java`
 - [Zap RiskAnalysis AI ML](https://github.com/QAPournima/Zap-RiskAnalysis-AI-ML) — Risk Analysis Dashboard using AI and ML · `HTML`
 - [ML Predicting Bugs](https://github.com/QAPournima/ML-Predicting-Bugs) — Predicting High-Risk Bugs with Machine Learning · `HTML`
