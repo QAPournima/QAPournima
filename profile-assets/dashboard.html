@@ -482,7 +482,7 @@
     .bar span { display: block; height: 100%; }
     .right-top {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 8px;
     }
     .stat-pill {
@@ -496,11 +496,35 @@
       line-height: 1.35;
     }
     .stat-pill .pill-sub {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 6px;
       margin-top: 4px;
       font-size: 10.5px;
       font-weight: 600;
       color: #475569;
+    }
+    .clock-run {
+      flex: 0 0 auto;
+      width: 16px;
+      height: 16px;
+      color: #2563eb;
+    }
+    .clock-run svg { display: block; width: 16px; height: 16px; }
+    .clock-run .clock-hour,
+    .clock-run .clock-min,
+    .clock-run .clock-sec {
+      transform-origin: 8px 8px;
+      transform-box: view-box;
+    }
+    .clock-run .clock-hour { animation: clock-spin 48s linear infinite; }
+    .clock-run .clock-min { animation: clock-spin 8s linear infinite; }
+    .clock-run .clock-sec { animation: clock-spin 2s linear infinite; }
+    @keyframes clock-spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .clock-run .clock-hour,
+      .clock-run .clock-min,
+      .clock-run .clock-sec { animation: none; }
     }
     .domains {
       display: grid;
@@ -638,7 +662,7 @@
         align-items: stretch;
       }
       .caps { grid-template-columns: 1fr 1fr; }
-      .snapshot, .domains, .right-top, .start-steps { grid-template-columns: 1fr 1fr; }
+      .snapshot, .domains, .start-steps { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 720px) {
       .banner { display: none; }
@@ -973,7 +997,7 @@
       <aside class="stack" id="col-right">
         <div class="right-top">
           <div class="stat-pill">📅 14+ Years of Experience</div>
-          <div class="stat-pill">🪪 Skilled Worker Visa<span class="pill-sub">Issued Dec 2024 · Valid till Dec 2028</span></div>
+          <div class="stat-pill">🪪 Skilled Worker Visa<span class="pill-sub"><span class="clock-run" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.4" fill="#eff6ff" stroke="currentColor" stroke-width="1.35"/><g class="clock-hour"><line x1="8" y1="8" x2="8" y2="4.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></g><g class="clock-min"><line x1="8" y1="8" x2="8" y2="3.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></g><g class="clock-sec"><line x1="8" y1="8.8" x2="8" y2="3.1" stroke="#f97316" stroke-width="0.9" stroke-linecap="round"/></g><circle cx="8" cy="8" r="1.05" fill="currentColor"/></svg></span>Issued Dec 2024 · Valid till Dec 2028</span></div>
         </div>
         <section class="card">
           <h2 class="h-navy">🌐 Domains & Experience</h2>
