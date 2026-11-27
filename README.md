@@ -39,6 +39,12 @@ Milton Keynes, UK · Skilled Worker Visa (issued Dec 2024 · valid till Dec 2028
 
 ### Featured AI/Other Projects
 
+**Engineering System Intelligence**  
+<img src="./profile-assets/engineering-system-intelligence.svg" alt="Engineering System Intelligence" width="100%"/>  
+Personal project. Reads a GitHub or GitLab repository and draws how it is put together — services, calls, declared API paths and ownership — then checks whether a running address actually answers.  
+`Python` `TypeScript` `FastAPI` `Git` `Architecture`  
+[View project](https://github.com/QAPournima/engineering-system-intelligence)
+
 **PAdo — AI-Powered Quality & Productivity Assistant**  
 <img src="./profile-assets/pado-card.png" alt="PAdo AI-powered quality and productivity assistant" width="100%"/>  
 Personal project. AI-driven desktop assistant for LLM-powered workflows, API integrations, local automation and intelligent task management. Unifies Slack, Jira, Gmail/Calendar and Confluence with AI daily briefings, persistent memory, privacy-first local storage and event-driven reminders.  
